@@ -1198,6 +1198,11 @@ amdefine@>=0.0.4:
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
   integrity sha1-SlKCrBZHKek2Gbz9OtFR+BfOkfU=
 
+"animate.css@>= 3.0.0", animate.css@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/animate.css/-/animate.css-4.1.1.tgz#614ec5a81131d7e4dc362a58143f7406abd68075"
+  integrity sha512-+mRmCTv6SbCmtYJCN4faJMNFVNN5EuCTTprDTAo7YzIGji2KADmakjVA3+8mVDkZ2Bf09vayB35lSQIex2+QaQ==
+
 ansi-colors@^3.0.0:
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/ansi-colors/-/ansi-colors-3.2.4.tgz#e3a3da4bfbae6c86a9c285625de124a234026fbf"
@@ -4102,7 +4107,7 @@ jest-worker@^25.4.0:
     merge-stream "^2.0.0"
     supports-color "^7.0.0"
 
-jquery@^3.6.0:
+"jquery@>= 1.6.2", jquery@^3.6.0:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.6.0.tgz#c72a09f15c1bdce142f49dbf1170bdf8adac2470"
   integrity sha512-JVzAR/AjBvVt2BmYhxRCSYysDsPcssdmTFnzyLEts9qNwmjmu4JTAMYubEfwVOSwpQ1I1sKKFcxhZCI2buerfw==
@@ -4230,6 +4235,18 @@ last-call-webpack-plugin@^3.0.0:
   dependencies:
     lodash "^4.17.5"
     webpack-sources "^1.1.0"
+
+lettering.js@0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/lettering.js/-/lettering.js-0.7.0.tgz#78821ea411becfe19c9b816a6178e957c74d7889"
+  integrity sha1-eIIepBG+z+Gcm4FqYXjpV8dNeIk=
+
+"letteringjs@>= 0.6.1":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/letteringjs/-/letteringjs-0.7.0.tgz#a9f02ed8265b44a78c0478ec5b019bf0884fb582"
+  integrity sha1-qfAu2CZbRKeMBHjsWwGb8IhPtYI=
+  dependencies:
+    jquery ">= 1.6.2"
 
 lines-and-columns@^1.1.6:
   version "1.1.6"
@@ -7085,6 +7102,15 @@ terser@^4.1.2, terser@^4.6.12:
     commander "^2.20.0"
     source-map "~0.6.1"
     source-map-support "~0.5.12"
+
+textillate@^0.4.1:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/textillate/-/textillate-0.4.1.tgz#543e7461ca58ce453546be668b27f79c502fb501"
+  integrity sha1-VD50YcpYzkU1Rr5miyf3nFAvtQE=
+  dependencies:
+    animate.css ">= 3.0.0"
+    jquery ">= 1.6.2"
+    letteringjs ">= 0.6.1"
 
 through2@^2.0.0:
   version "2.0.5"

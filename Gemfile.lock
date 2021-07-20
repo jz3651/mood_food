@@ -60,6 +60,7 @@ GEM
       activerecord (>= 5.0, < 6.2)
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
+    animate.css-rails (3.2.0)
     autoprefixer-rails (10.2.5.0)
       execjs (< 2.8.0)
     bcrypt (3.1.16)
@@ -236,6 +237,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  animate.css-rails
   acts-as-taggable-on (~> 7.0)
   autoprefixer-rails (= 10.2.5)
   bootsnap (>= 1.4.2)
