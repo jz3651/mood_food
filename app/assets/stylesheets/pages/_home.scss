@@ -11,6 +11,8 @@ body {
     text-align: center;
     animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 1s;
+    font-weight: bold;
+    font-size: 100px;
 }
 
 .title1 {
@@ -21,6 +23,20 @@ body {
     text-align: center;
     animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 1s;
+    font-weight: bold;
+}
+
+
+.title2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 65px;
+    letter-spacing: 0px;
+    color: white;
+    text-align: center;
+    animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s;
+    font-weight: bold;
+    color: #FF6495;
 }
 
 .subtitle {
@@ -52,6 +68,7 @@ a:hover {
     text-align: center;
     animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 1s; /* don't forget to set a duration! */
+    font-weight: bold;
 }
 
 :root {
@@ -81,28 +98,6 @@ a:hover {
         height: 100%;
     }
 }
-
-
-// .hero-container:before {
-//     content: '';
-//     position: absolute;
-//     bottom: 0;
-//     width: 100%;
-//     height: 100vh;
-//     background: linear-gradient(to top, rgba(#361999, 0.7),  transparent);
-//     z-index: 10000;
-// }
-
-// .hero-container:after {
-//     content: '';
-//     position: absolute;
-//     bottom: 0;
-//     width: 100%;
-//     height: 100vh;
-//     background: rgba(#361999, 0.7);
-//     z-index: 10000;
-//     mix-blend-mode: color;
-// }
 
 .title-description {
     width: 70%;

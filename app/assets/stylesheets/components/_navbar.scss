@@ -7,7 +7,7 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-  width: 40px;
+  width: 50px;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -18,6 +18,23 @@
   // border-color: #FF6495;
   // border-radius: 10px;
   &:hover {
-    color: white;
+    background-color: white;
+  }
+}
+
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+  background: white;
+  color: rgb(32, 32, 95);
+  border-radius: 20px;
+}
+
+.navbar-light .navbar-nav .nav-item {
+  margin-right: 15px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  &:hover {
+    color: rgb(32, 32, 95);
+    border-radius: 20px;
   }
 }
