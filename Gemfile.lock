@@ -237,8 +237,8 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  animate.css-rails
   acts-as-taggable-on (~> 7.0)
+  animate.css-rails
   autoprefixer-rails (= 10.2.5)
   bootsnap (>= 1.4.2)
   byebug
