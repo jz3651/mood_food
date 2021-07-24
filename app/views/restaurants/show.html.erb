@@ -1,20 +1,46 @@
-<div class="hero-container panel" data-color="violet">
-  <div class="restuarant_card">
-    <h1 class="title1"><%=@restaurant.name%></h1>
+<div container>
+<div class="restaurant-container">
   <img src= <%=@restaurant_image%> alt="">
+  <div class="restaurant-title">
+    <h1><strong><%=@restaurant.name%></strong></h1>
   </div>
 </div>
-<div class="panel" data-color="blue">
-    <div class="title-description">
-        <h1 class="title2"> <%= @restaurant.cuisine%> </h1><br><br>
-        <div class="description">
-          <h4 class="subtitle">  <%= @restaurant.location %>  </h4>
-          <h4 class="subtitle">  <%= @restaurant.description %>  </h4>
-        </div>
-    </div>
+
+<div class="restaurant-info">
+  <div class="title">
+    <h4><strong><%=@restaurant.description%></strong></h4>
+  </div>
 </div>
-<div class="panel" data-color="purple">
-    <h2 class="title">Feeling something different?</h2>
-    <div class="subtitle"><%= link_to "Change my mood", restaurants_path %> to search again</div>
+
+<div class="location">
+  <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+  <div class="location-info">
+    <h2>Product name</h2>
+    <p>Product description with <strong>relevant info</strong> only.</p>
+  </div>
+</div>
+
+<div class="review-info">
+  <div class="review-header">
+    <h2>Top Reviews</h2>
+  </div>
+  <div class="review">
+    <h3>Review Name</h3>
+    <p>This is one groovy review</p>
+  </div>
+  <div class="review">
+    <h3>Review Name</h3>
+    <p>This is one groovy review</p>
+  </div>
+  <div class="review">
+    <h3>Review Name</h3>
+    <p>This is one groovy review</p>
+  </div>
+</div>
+
+<div class="link-menu">
+  <h2>Feeling something different?</h2>
+  <div class="link"><%= link_to "Change my mood", restaurants_path %> to search again</div>
+</div>
 </div>
 
