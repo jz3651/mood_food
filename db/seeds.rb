@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Restaurant.create([
+Bookmark.create([
   {
     name: 'Pho Hung Vuong Saigon',
     location: 'Footscray',
@@ -128,3 +128,4 @@ Restaurant.create([
     rating: 4.3
   }
 ])
+
