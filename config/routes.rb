@@ -5,4 +5,7 @@ Rails.application.routes.draw do
   resources :restaurants, only: [ :index, :show ] do 
     resources :reviews, only: [ :index ]
   end
+  resources :users, only: [ :show ] do
+    resources :bookmarks, only: [ :index ]
+  end
 end
