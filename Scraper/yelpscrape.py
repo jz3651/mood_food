@@ -146,14 +146,6 @@ def yelp_main_scrape(name):
 
 def main():
     yelp_main_scrape("39_Pizzeria.csv")
-    # [page_num_div, review_div] = find_divs(url2)
-    # print(find_last_page(page_num_div))
-    # for i in review_div:
-    #     print('this is a review div')
-    #     print(i)
-    #     print('end of review')
-    # rev = find_reviews(review_div)
-    # write_dict_to_csv(rev)
 
 
 if __name__ == "__main__":
