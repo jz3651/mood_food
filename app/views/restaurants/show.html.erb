@@ -1,3 +1,20 @@
-<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
-  Restaurant Name
+<div class="hero-container panel" data-color="violet">
+  <div class="restuarant_card">
+    <h1 class="title1"><%=@restaurant.name%></h1>
+  <img src= <%=@restaurant_image%> alt="">
+  </div>
 </div>
+<div class="panel" data-color="blue">
+    <div class="title-description">
+        <h1 class="title2"> <%= @restaurant.cuisine%> </h1><br><br>
+        <div class="description">
+          <h4 class="subtitle">  <%= @restaurant.location %>  </h4>
+          <h4 class="subtitle">  <%= @restaurant.description %>  </h4>
+        </div>
+    </div>
+</div>
+<div class="panel" data-color="purple">
+    <h2 class="title">Feeling something different?</h2>
+    <div class="subtitle"><%= link_to "Change my mood", restaurants_path %> to search again</div>
+</div>
+
