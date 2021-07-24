@@ -37,4 +37,5 @@ import { likeBtnAnimated } from '../components/like-animation';
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
+  likeBtnAnimated()
 });
