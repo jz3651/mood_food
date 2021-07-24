@@ -1,0 +1,140 @@
+.container {
+  display: flex;
+}
+
+.restaurant-container {
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // flex-direction: column;
+    img {
+        position: relative;
+        z-index: 0;
+        top: 5px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.restaurant-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.review_info {
+  display: flex;
+}
+
+.review-header{
+  margin-top: 40px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.review {
+  padding: 30px;
+  margin: 50px;
+  width: auto;
+  height: auto;
+  background-color: #FF6495;;
+  border: solid, 1px;
+  border-radius: 2%;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.link-menu {
+    height: 30vh;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0px;
+    color: #FF6495;
+    text-align: center;
+    animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s;
+    font-weight: bold;
+    font-size: 100px;
+}
+
+.link {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s;
+}
+
+.restaurant-info {
+    margin-top: 25px;
+    padding: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0px;
+    color: #FF6495;
+    text-align: center;
+    animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s;
+    font-weight: bold;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.location {
+  overflow: hidden;
+  height: 80vh;
+  width: 80%;
+  margin: auto;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location img {
+  height: 100%;
+  width: 600px;
+  object-fit: cover;
+}
+
+.location h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.location p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.location .location-info {
+  padding: 16px;
+}
