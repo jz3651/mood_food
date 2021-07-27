@@ -1,9 +1,13 @@
-<div container>
+<div show-container>
 <div class="restaurant-container">
   <img src= <%=@restaurant_image%> alt="">
   <div class="restaurant-title">
     <h1><strong><%=@restaurant.name%></strong></h1>
   </div>
+  <div class="mood-rating-text">
+    <p>93%</p>
+  </div>
+  <button class="like-button"><span id="like-icon"><i class="far fa-heart"></i></span></button>
 </div>
 
 <div class="restaurant-info">
@@ -12,9 +16,13 @@
   </div>
 </div>
 
-<div class="location">
-  <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
-  <div class="location-info">
+<div class="location-info">
+  <div id="map"
+     style="width: 100%; height: 300px;"
+     data-markers="<%= @markers.to_json %>"
+     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+  </div>
+  <div class="location-description">
     <h2>Product name</h2>
     <p>Product description with <strong>relevant info</strong> only.</p>
   </div>

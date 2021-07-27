@@ -6,10 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Bookmark.create([
+Restaurant.create([
   {
     name: 'Pho Hung Vuong Saigon',
-    location: 'Footscray',
+    location: '128 Hopkins St, Footscray',
     cuisine: 'Vietnamese',
     price: 50,
     description: 'Delicious Vietnamese Restaurant',
@@ -17,7 +17,7 @@ Bookmark.create([
   },
   {
     name: 'Sapa Hills',
-    location: 'Footscray',
+    location: '112 Hopkins St, Footscray',
     cuisine: 'Vietnamese',
     price: 100,
     description: 'Delicious Vietnamese Restaurant',
@@ -25,7 +25,7 @@ Bookmark.create([
   },
   {
     name: 'Hao Phong',
-    location: 'Footscray',
+    location: '136 Hopkins St, Footscray',
     cuisine: 'Vietnamese',
     price: 120,
     description: 'Delicious Vietnamese Restaurant',
@@ -33,7 +33,7 @@ Bookmark.create([
   },
   {
     name: 'Huong Viet Vegetarian & Vegan',
-    location: 'Footscray',
+    location: '36A Leeds St, Footscray',
     cuisine: 'Vietnamese',
     price: 80,
     description: 'Delicious Vietnamese Restaurant',
@@ -41,7 +41,7 @@ Bookmark.create([
   },
   {
     name: 'Pho Tam',
-    location: 'Footscray',
+    location: '7/9 Leeds St, Footscray',
     cuisine: 'Vietnamese',
     price: 100,
     description: 'Delicious Vietnamese Restaurant',
@@ -49,7 +49,7 @@ Bookmark.create([
   },
   {
     name: 'Tipo 00',
-    location: 'Carlton',
+    location: '361 Little Bourke St, Melbourne',
     cuisine: 'Italian',
     price: 50,
     description: 'Delicious Italian Restaurant',
@@ -57,7 +57,7 @@ Bookmark.create([
   },
   {
     name: '+39 Pizzeria',
-    location: 'Carlton',
+    location: '362 Little Bourke St, Melbourne',
     cuisine: 'Italian',
     price: 100,
     description: 'Delicious Italian Restaurant',
@@ -65,7 +65,7 @@ Bookmark.create([
   },
   {
     name: 'DOC Pizza & Mozzarella Bar',
-    location: 'Carlton',
+    location: '295 Drummond St, Carlton',
     cuisine: 'Italian',
     price: 120,
     description: 'Delicious Italian Restaurant',
@@ -73,7 +73,7 @@ Bookmark.create([
   },
   {
     name: 'Maccaroni Trattoria Italiana',
-    location: 'Carlton',
+    location: '10-16 Manchester Ln, Melbourne',
     cuisine: "Italian",
     price: 80,
     description: 'Delicious Italian Restaurant',
@@ -81,7 +81,7 @@ Bookmark.create([
   },
   {
     name: 'Osteria Ilaria',
-    location: 'Carlton',
+    location: '367 Little Bourke St, Melbourne',
     cuisine: 'Italian',
     price: 100,
     description: 'Delicious Italian Restaurant',
@@ -89,7 +89,7 @@ Bookmark.create([
   },
   {
     name: 'Trippy Taco',
-    location: 'Richmond',
+    location: '234 Gertrude St, Fitzroy',
     cuisine: 'Mexican',
     price: 50,
     description: 'Delicious Mexican Restaurant',
@@ -97,7 +97,7 @@ Bookmark.create([
   },
   {
     name: 'La Tortilleria',
-    location: 'Richmond',
+    location: '72 Stubbs St, Kensington',
     cuisine: 'Mexican',
     price: 100,
     description: 'Delicious Mexican Restaurant',
@@ -105,7 +105,7 @@ Bookmark.create([
   },
   {
     name: 'Mamasita',
-    location: 'Richmond',
+    location: '11 Collins St, Melbourne',
     cuisine: 'Mexican',
     price: 120,
     description: 'Delicious Mexican Restaurant',
@@ -113,7 +113,7 @@ Bookmark.create([
   },
   {
     name: 'Radio Mexico',
-    location: 'Richmond',
+    location: '11-13 Carlisle St, St Kilda',
     cuisine: 'Mexican',
     price: 80,
     description: 'Delicious Mexican Restaurant',
@@ -121,7 +121,7 @@ Bookmark.create([
   },
   {
     name: 'Fonda',
-    location: 'Richmond',
+    location: '236 Smith St, Collingwood',
     cuisine: 'Mexican',
     price: 100,
     description: 'Delicious Mexican Restaurant',

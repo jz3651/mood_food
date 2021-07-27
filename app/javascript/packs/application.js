@@ -38,5 +38,13 @@ import { button_prevent_default } from '../components/like-animation';
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
+
   likeBtnAnimated();
 });
+
+import { initMapboxOnRestaurantsIndex, initMapboxOnRestaurantShow } from '../plugins/init_mapbox';
+
+document.addEventListener('turbolinks:load', () => {
+  initMapboxOnRestaurantsIndex()
+  initMapboxOnRestaurantShow();
+})

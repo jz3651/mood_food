@@ -1,4 +1,4 @@
-.container {
+.show-container {
   display: flex;
 }
 
@@ -54,7 +54,7 @@
   height: auto;
   background-color: #FF6495;;
   border: solid, 1px;
-  border-radius: 2%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   font-family: 'Poppins', sans-serif;
   text-align: center;
 }
@@ -88,6 +88,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.restaurant-title {
+    background-color: #FF6495;
+    padding: 25px;
+    color: #361999;
 }
 
 .title {
