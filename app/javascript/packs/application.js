@@ -39,3 +39,10 @@ document.addEventListener('turbolinks:load', () => {
   // initSelect2();
   likeBtnAnimated()
 });
+
+import { initMapboxOnRestaurantsIndex, initMapboxOnRestaurantShow } from '../plugins/init_mapbox';
+
+document.addEventListener('turbolinks:load', () => {
+  initMapboxOnRestaurantsIndex()
+  initMapboxOnRestaurantShow();
+})
