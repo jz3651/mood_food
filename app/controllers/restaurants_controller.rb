@@ -1,12 +1,11 @@
 class RestaurantsController < ApplicationController
 
   def index
-    @restaurants = Restaurant.all
     @bookmark = Bookmark.new
     if params[:query].present?
-      @restaurants = Restaurant.search_by_name_and_cuisine(params[:query])
+      @restaurants = Restaurant.search_by_name_and_cuisine(params[:query]).order(created_at: :asc)
     else
-      @restaurants = Restaurant.all
+      @restaurants = Restaurant.all.order(created_at: :asc)
     end
   end
 
