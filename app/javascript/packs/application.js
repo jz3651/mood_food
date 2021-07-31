@@ -35,15 +35,17 @@ import { rotateTerm } from '../components/title-animation';
 import { scroll_change } from '../components/page-scroll-color';
 import { likeBtnAnimated } from '../components/like-animation';
 import { button_prevent_default } from '../components/like-animation';
-import { initMapboxOnRestaurantsIndex, initMapboxOnRestaurantShow } from '../plugins/init_mapbox';
-import { turbolinkScroll } from  '../components/turbolink-scroll';
-
-Turbolinks.scroll = {};
 
 document.addEventListener('turbolinks:load', () => {
-  initMapboxOnRestaurantsIndex();
-  initMapboxOnRestaurantShow();
+  // Call your functions here, e.g:
+  // initSelect2();
+
   likeBtnAnimated();
-  turbolinkScroll();
+});
+
+import { initMapbox } from '../plugins/init_mapbox';
+
+document.addEventListener('turbolinks:load', () => {
+  initMapbox();
 })
 
