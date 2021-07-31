@@ -34,12 +34,14 @@ import { rotateTerm } from '../components/title-animation';
 // import {scrollFromTop} from '../components/page-scroll-color'
 import { scroll_change } from '../components/page-scroll-color';
 import { likeBtnAnimated } from '../components/like-animation';
-import { button_prevent_default } from '../components/like-animation';
 import { initMapbox } from '../plugins/init_mapbox';
 import { initToggleMap } from '../plugins/map_restaurant_toggle';
+import { turbolinkScroll } from '../components/turbolink-scroll';
+Turbolinks.scroll = {};
 
 document.addEventListener('turbolinks:load', () => {
   initMapbox();
   likeBtnAnimated();
   initToggleMap();
+  turbolinkScroll();
 });
