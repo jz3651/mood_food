@@ -6,12 +6,38 @@
 <div class="panel" data-color="blue">
     <div class="title-description">
         <h1 class="title2">find and curate restaurants using your mood</h1><br><br>
-        <div class="description">
+        <div class="subtitle-description">
             <h4 class="subtitle">choosing a restaurant for the right occasion can be a hassle. tell us what you feel like, and we'll take care of the rest.</h4>
         </div>
     </div>
 </div>
 <div class="panel" data-color="purple">
     <h1 class="title">mood food</h1>
-    <div class="subtitle"><%= link_to "sign up", new_user_registration_path %> to see your recommendations</div>
+    <div class="subtitle"><%= link_to "sign up", new_user_registration_path %> to see your recommendations or search below to get started</div>
+</div>
+<div class="panel" data-color="purple">
+    <%= form_tag("/search", :method => "get", class: "form-container") do %>
+        <div class="form-tag">
+            <%= label_tag(:q, "Location:") %>
+            <%= text_field_tag(:q) %>
+        </div>
+        <div class="form-tag">
+            <%= label_tag(:q, "Cuisine:") %>
+            <%= text_field_tag(:q) %>
+        </div>
+        <div class="form-tag">
+            <%= label_tag(:q, "Mood:", class: "mood-text") %>
+            <select id="mood-dropdown" name="mood-dropdown">
+                <option value="volvo">Romantic</option>
+                <option value="saab">Casual</option>
+                <option value="fiat">Feast</option>
+                <option value="fiat">Social</option>
+                <option value="fiat">Lazy</option>
+            </select>
+        </div>
+        <%= link_to restaurants_path do %>
+            <div class="search-icon"><i class="fas fa-search"></i></div>
+        <% end %>
+        <%# <%= submit_tag("Search") %>
+    <% end %>
 </div>
