@@ -2,10 +2,10 @@
     <div id="restaurant-<%= restaurant.id %>" class="restaurant-card">
         <%= link_to restaurant_path(restaurant), target: :_blank do %>
             <div class="image-segment">
-                <img class="restaurant-image" src="https://source.unsplash.com/mE6kjov4rTg" alt="">    
+                <img class="restaurant-image" src="https://source.unsplash.com/mE6kjov4rTg" alt="">
                 <% end %>
                 <div class="mood-rating-text">
-                    <p>93%</p>
+                    <p><%=restaurant.mood_rating%>%</p>
                 </div>
                 <% existing_bookmark = restaurant.bookmarked_by(current_user) %>
                 <% if existing_bookmark %>

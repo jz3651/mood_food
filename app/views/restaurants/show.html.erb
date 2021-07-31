@@ -32,18 +32,13 @@
   <div class="review-header">
     <h2>Top Reviews</h2>
   </div>
-  <div class="review">
-    <h3>Review Name</h3>
-    <p>This is one groovy review</p>
-  </div>
-  <div class="review">
-    <h3>Review Name</h3>
-    <p>This is one groovy review</p>
-  </div>
-  <div class="review">
-    <h3>Review Name</h3>
-    <p>This is one groovy review</p>
-  </div>
+  <% @restaurant_reviews.each do |review| %>
+    <div class="review">
+      <h3>Review</h3>
+        <p><%=review.rating%></p>
+        <p><%=review.description%></p>
+    </div>
+  <% end %>
 </div>
 
 <div class="link-menu">

@@ -4,7 +4,7 @@ class RestaurantsController < ApplicationController
     if params[:query].present?
       @restaurants = Restaurant.search_by_name_and_cuisine(params[:query]).order(created_at: :asc)
     else
-      @restaurants = Restaurant.all.order(created_at: :asc)
+      @restaurants = Restaurant.all.order(mood_rating: :desc)
     end
 
     @markers = @restaurants.geocoded.map do |res|
@@ -26,6 +26,8 @@ class RestaurantsController < ApplicationController
     else
       @restaurant_image << "https://source.unsplash.com/Y11iTVE2DFA"
     end
+    @restaurant_reviews = Restaurant.find(params[:id]).reviews.all
+
 
     @markers =
       {
@@ -33,4 +35,10 @@ class RestaurantsController < ApplicationController
         lng: @restaurant_geocoded.longitude
       }
   end
+
+  # def show_reviews
+  #   @restaurant_reviews = Restaurant.find(params[:id]).all
+  # end
+
+
 end
