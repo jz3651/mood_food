@@ -42,9 +42,8 @@ document.addEventListener('turbolinks:load', () => {
   likeBtnAnimated();
 });
 
-import { initMapboxOnRestaurantsIndex, initMapboxOnRestaurantShow } from '../plugins/init_mapbox';
+import { initMapbox } from '../plugins/init_mapbox';
 
 document.addEventListener('turbolinks:load', () => {
-  initMapboxOnRestaurantsIndex()
-  initMapboxOnRestaurantShow();
+  initMapbox();
 })

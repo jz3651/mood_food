@@ -17,9 +17,6 @@
         <li class="nav-item <%= 'active' if controller_name == 'restaurants' && action_name == 'index' %>">
           <%= link_to "All", restaurants_path, class: "nav-link" %>
         </li>
-        <li class="nav-item">
-          <%= link_to "Map", "#", class: "nav-link" %>
-        </li>
         <li class="nav-item <%= 'active' if controller_name == 'bookmarks' && action_name == 'index' %>">
           <%= link_to "Saved", bookmarks_path, class: "nav-link" %>
         </li>

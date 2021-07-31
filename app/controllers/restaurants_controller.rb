@@ -1,5 +1,4 @@
 class RestaurantsController < ApplicationController
-
   def index
     @restaurants = Restaurant.all
     @bookmark = Bookmark.new
@@ -7,6 +6,13 @@ class RestaurantsController < ApplicationController
       @restaurants = Restaurant.search_by_name_and_cuisine(params[:query])
     else
       @restaurants = Restaurant.all
+    end
+
+    @markers = @restaurants.geocoded.map do |res|
+      {
+        lat: res.latitude,
+        lng: res.longitude
+      }
     end
   end
 
@@ -16,7 +22,7 @@ class RestaurantsController < ApplicationController
     @restaurant_image = ""
     if @restaurant.cuisine == "Mexican"
       @restaurant_image << "https://source.unsplash.com/Y0zbn9lPCEU"
-    elsif(@restaurant.cuisine == "Italian")
+    elsif @restaurant.cuisine == "Italian"
       @restaurant_image << "https://source.unsplash.com/MqT0asuoIcU"
     else
       @restaurant_image << "https://source.unsplash.com/Y11iTVE2DFA"
@@ -27,6 +33,5 @@ class RestaurantsController < ApplicationController
         lat: @restaurant_geocoded.latitude,
         lng: @restaurant_geocoded.longitude
       }
-
   end
 end
