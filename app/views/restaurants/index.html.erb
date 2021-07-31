@@ -18,13 +18,11 @@
 
     <div id="js-list">
       <div class="restaurants d-flex flex-wrap">
-
         <ul>
             <% cache @restaurants do %>
                 <%= render @restaurants %>
             <% end %>
         </ul>
-
       </div>
     </div>
     <div id="js-map" class="d-none">
