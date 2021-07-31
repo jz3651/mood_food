@@ -35,6 +35,7 @@ import { rotateTerm } from '../components/title-animation';
 import { scroll_change } from '../components/page-scroll-color';
 import { likeBtnAnimated } from '../components/like-animation';
 import { button_prevent_default } from '../components/like-animation';
+
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
@@ -47,3 +48,4 @@ import { initMapbox } from '../plugins/init_mapbox';
 document.addEventListener('turbolinks:load', () => {
   initMapbox();
 })
+
