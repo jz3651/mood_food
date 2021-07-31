@@ -13,7 +13,8 @@ Restaurant.create([
     cuisine: 'Vietnamese',
     price: 50,
     description: 'Delicious Vietnamese Restaurant',
-    rating: 4.4
+    rating: 4.4,
+    mood_rating: 88
   },
   {
     name: 'Sapa Hills',
@@ -21,7 +22,8 @@ Restaurant.create([
     cuisine: 'Vietnamese',
     price: 100,
     description: 'Delicious Vietnamese Restaurant',
-    rating: 4.3
+    rating: 4.2,
+    mood_rating: 96
   },
   {
     name: 'Hao Phong',
@@ -29,7 +31,8 @@ Restaurant.create([
     cuisine: 'Vietnamese',
     price: 120,
     description: 'Delicious Vietnamese Restaurant',
-    rating: 4.2
+    rating: 4.2,
+    mood_rating: 84
   },
   {
     name: 'Huong Viet Vegetarian & Vegan',
@@ -37,7 +40,8 @@ Restaurant.create([
     cuisine: 'Vietnamese',
     price: 80,
     description: 'Delicious Vietnamese Restaurant',
-    rating: 4.6
+    rating: 4.6,
+    mood_rating: 88
   },
   {
     name: 'Pho Tam',
@@ -45,7 +49,8 @@ Restaurant.create([
     cuisine: 'Vietnamese',
     price: 100,
     description: 'Delicious Vietnamese Restaurant',
-    rating: 4.5
+    rating: 4.5,
+    mood_rating: 75
   },
   {
     name: 'Tipo 00',
@@ -53,7 +58,8 @@ Restaurant.create([
     cuisine: 'Italian',
     price: 50,
     description: 'Delicious Italian Restaurant',
-    rating: 4.5
+    rating: 4.5,
+    mood_rating: 60
   },
   {
     name: '+39 Pizzeria',
@@ -62,6 +68,7 @@ Restaurant.create([
     price: 100,
     description: 'Delicious Italian Restaurant',
     rating: 4.4
+    mood_rating: 50
   },
   {
     name: 'DOC Pizza & Mozzarella Bar',
@@ -69,7 +76,8 @@ Restaurant.create([
     cuisine: 'Italian',
     price: 120,
     description: 'Delicious Italian Restaurant',
-    rating: 4.4
+    rating: 4.4,
+    mood_rating: 40
   },
   {
     name: 'Maccaroni Trattoria Italiana',
@@ -77,7 +85,8 @@ Restaurant.create([
     cuisine: "Italian",
     price: 80,
     description: 'Delicious Italian Restaurant',
-    rating: 4.3
+    rating: 4.3,
+    mood_rating: 20
   },
   {
     name: 'Osteria Ilaria',
@@ -85,7 +94,8 @@ Restaurant.create([
     cuisine: 'Italian',
     price: 100,
     description: 'Delicious Italian Restaurant',
-    rating: 4.3
+    rating: 4.3,
+    mood_rating: 10
   },
   {
     name: 'Trippy Taco',
@@ -93,7 +103,8 @@ Restaurant.create([
     cuisine: 'Mexican',
     price: 50,
     description: 'Delicious Mexican Restaurant',
-    rating: 4.3
+    rating: 4.3,
+    mood_rating: 10
   },
   {
     name: 'La Tortilleria',
@@ -101,7 +112,8 @@ Restaurant.create([
     cuisine: 'Mexican',
     price: 100,
     description: 'Delicious Mexican Restaurant',
-    rating: 4.3
+    rating: 4.3,
+    mood_rating: 20
   },
   {
     name: 'Mamasita',
@@ -109,7 +121,8 @@ Restaurant.create([
     cuisine: 'Mexican',
     price: 120,
     description: 'Delicious Mexican Restaurant',
-    rating: 4.3
+    rating: 4.3,
+    mood_rating: 15
   },
   {
     name: 'Radio Mexico',
@@ -117,7 +130,8 @@ Restaurant.create([
     cuisine: 'Mexican',
     price: 80,
     description: 'Delicious Mexican Restaurant',
-    rating: 4.3
+    rating: 4.3,
+    mood_rating: 12
   },
   {
     name: 'Fonda',
@@ -125,7 +139,8 @@ Restaurant.create([
     cuisine: 'Mexican',
     price: 100,
     description: 'Delicious Mexican Restaurant',
-    rating: 4.3
+    rating: 4.3,
+    mood_rating: 20
   }
 ])
 
