@@ -4,7 +4,16 @@
             <div class="image-segment">
                 <img class="restaurant-image" src="https://source.unsplash.com/mE6kjov4rTg" alt="">
                 <% end %>
-                <div class="mood-rating-text">
+                <div id="MoodMatch" class="mood-rating-text">
+
+                <script src="https://unpkg.com/@popperjs/core@2"></script>
+                <script src="https://unpkg.com/tippy.js@6"></script>
+                <script>
+
+                tippy('#MoodMatch', {
+                  content: 'Your personalised match',
+                  });
+    </script>
                     <p><%=restaurant.mood_rating%>%</p>
                 </div>
                 <% existing_bookmark = restaurant.bookmarked_by(current_user) %>
@@ -23,6 +32,15 @@
             <p class="restaurant-name"><%= restaurant.name%></p>
         <% end %>
         <p class="mt-2"><%= restaurant.description %></p>
-        <div class="mt-3" style="position:absolute; display:inline-block"><p><%= restaurant.rating %> <i class="fas fa-star"></i> (23) | $<%= restaurant.price / 2 %>pp</p></div>
+        <div class="mt-3" style="position:absolute; display:inline-block"><p><%= restaurant.rating %>
+            <script src="https://unpkg.com/@popperjs/core@2"></script>
+                <script src="https://unpkg.com/tippy.js@6"></script>
+                <script>
+
+                tippy('.mt-3', {
+                  content: 'Rating aggregation',
+                  });
+    </script>
+          <i class="fas fa-star"></i> (23) | $<%= restaurant.price / 2 %>pp</p></div>
     </div>
 <% end %>
