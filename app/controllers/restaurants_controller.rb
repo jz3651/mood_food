@@ -4,7 +4,7 @@ class RestaurantsController < ApplicationController
     if params[:query].present?
       @restaurants = Restaurant.search_by_name_and_cuisine(params[:query]).order(created_at: :asc)
     else
-      @restaurants = Restaurant.all.order(created_at: :asc)
+      @restaurants = Restaurant.all.order(mood_rating: :desc)
     end
 
     @markers = @restaurants.geocoded.map do |res|
@@ -21,6 +21,7 @@ class RestaurantsController < ApplicationController
     @restaurant = Restaurant.find(params[:id])
     @restaurant_geocoded = Restaurant.geocoded.find(params[:id])
     @restaurant_image = ""
+<<<<<<< HEAD
       if @restaurant.cuisine == "Mexican"
         @restaurant_image << "https://source.unsplash.com/Y0zbn9lPCEU"
       elsif @restaurant.cuisine == "Italian"
@@ -28,6 +29,17 @@ class RestaurantsController < ApplicationController
       else
         @restaurant_image << "https://source.unsplash.com/Y11iTVE2DFA"
       end
+=======
+    if @restaurant.cuisine == "Mexican"
+      @restaurant_image << "https://source.unsplash.com/Y0zbn9lPCEU"
+    elsif @restaurant.cuisine == "Italian"
+      @restaurant_image << "https://source.unsplash.com/MqT0asuoIcU"
+    else
+      @restaurant_image << "https://source.unsplash.com/Y11iTVE2DFA"
+    end
+    @restaurant_reviews = Restaurant.find(params[:id]).reviews.all
+
+>>>>>>> origin
 
     @markers =
       {
@@ -37,4 +49,10 @@ class RestaurantsController < ApplicationController
         image_url: helpers.asset_url('https://res.cloudinary.com/shamo/image/upload/v1626777768/Mood_Food_stf3we.png')
       }
   end
+
+  # def show_reviews
+  #   @restaurant_reviews = Restaurant.find(params[:id]).all
+  # end
+
+
 end

@@ -41,12 +41,12 @@ body {
 
 .subtitle {
     font-family: 'Poppins', sans-serif;
-    letter-spacing: 0px;
     font-size: 20px;
     color: white;
     text-align: center;
     animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 1s;
+    align-items: center;
 }
 
 a {
@@ -103,10 +103,7 @@ a:hover {
     width: 70%;
     display: flex;
     justify: center;
-}
-
-.description {
-    width: 68%;
+    flex-direction: column;
 }
 
 .panel {
@@ -126,6 +123,34 @@ a:hover {
     background-color: #275ed4;
 }
 
+.color-unknown {
+    background-color: #23aeff;
+}
+
 .color-purple {
     background-color: #361999;
 }
+
+.form-container {
+    background-color: white;
+    border-radius: 40px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mood-text {
+    color: #FF6495;
+}
+
+.form-tag {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-icon {
+    font-size: 35px;
+    margin-left: 10px;
+}
+
