@@ -21,15 +21,7 @@ class RestaurantsController < ApplicationController
     @restaurant = Restaurant.find(params[:id])
     @restaurant_geocoded = Restaurant.geocoded.find(params[:id])
     @restaurant_image = ""
-<<<<<<< HEAD
-      if @restaurant.cuisine == "Mexican"
-        @restaurant_image << "https://source.unsplash.com/Y0zbn9lPCEU"
-      elsif @restaurant.cuisine == "Italian"
-        @restaurant_image << "https://source.unsplash.com/MqT0asuoIcU"
-      else
-        @restaurant_image << "https://source.unsplash.com/Y11iTVE2DFA"
-      end
-=======
+
     if @restaurant.cuisine == "Mexican"
       @restaurant_image << "https://source.unsplash.com/Y0zbn9lPCEU"
     elsif @restaurant.cuisine == "Italian"
@@ -38,8 +30,6 @@ class RestaurantsController < ApplicationController
       @restaurant_image << "https://source.unsplash.com/Y11iTVE2DFA"
     end
     @restaurant_reviews = Restaurant.find(params[:id]).reviews.all
-
->>>>>>> origin
 
     @markers =
       {
