@@ -1,0 +1,10 @@
+<div class="map-restaurant-card">
+  <%= link_to restaurant_path(restaurant), target: :_blank, :class => "restaurant-link" do %>
+      <p class="restaurant-name"><%= restaurant.name%></p>
+  <% end %>
+  <p style="color:#b9b9b9; font-size:15px"><i class="fas fa-utensils"></i> <%= restaurant.cuisine %>  <i class="fas fa-map-marker-alt"></i> <%= restaurant.location %></p>
+  <p><%= restaurant.rating %> <i class="fas fa-star"></i> (23) | $<%= restaurant.price / 2 %>pp</p>
+  <div class="mood-rating-text-map">
+    <p>93%</p>
+  </div>
+</div>
