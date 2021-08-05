@@ -34,7 +34,8 @@
   </div>
   <% @restaurant_reviews.each do |review| %>
     <div class="review">
-      <h3>Review</h3>
+      <h3><%=review.title%></h3>
+        <p>From <%=review.source%> on <%=review.reviewdate%> </p>
         <p><%=review.rating%></p>
         <p><%=review.description%></p>
     </div>
