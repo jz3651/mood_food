@@ -185,8 +185,8 @@ a:hover {
     display: flex;
     flex-direction: column;
     border-right: 1px solid lightgray;
-    margin-right: 20px;
-    margin-left: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
     .form-control {
         border: none;
         padding: 0px;
@@ -197,6 +197,10 @@ a:hover {
         border-color: transparent;
         outline: 0;
         box-shadow: 0 0 transparent;
+    }
+    :hover {
+        background-color: lightgray;
+        opacity: 0.8;
     }
 }
 
@@ -209,3 +213,9 @@ a:hover {
     margin: 0px;
 }
 
+#mood-dropdown {
+    border: none;
+    :focus-visible {
+        border-color: transparent;
+    }
+}
