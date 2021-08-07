@@ -16,28 +16,36 @@
     <div class="subtitle"><%= link_to "sign up", new_user_registration_path %> to see your recommendations or search below to get started</div>
 </div>
 <div class="panel" data-color="purple">
-    <%= form_tag("/search", :method => "get", class: "form-container") do %>
+    <%= form_tag restaurants_path, method: :get, :class => "restaurant-search" do %>
         <div class="form-tag">
-            <%= label_tag(:q, "Location:") %>
-            <%= text_field_tag(:q) %>
+            <%= label_tag(:q, "Location", class: "search-label") %>
+            <%= text_field_tag :query,
+                params[:query],
+                class: "form-control",
+                placeholder: "Where to eat?"
+            %>
         </div>
         <div class="form-tag">
-            <%= label_tag(:q, "Cuisine:") %>
-            <%= text_field_tag(:q) %>
+            <%= label_tag(:q, "Cuisine", class: "search-label")%>
+            <%= text_field_tag :query,
+                params[:query],
+                class: "form-control",
+                placeholder: "What do you feel like?"
+            %>
         </div>
-        <div class="form-tag">
+        <div class="custom-class form-tag">
             <%= label_tag(:q, "Mood:", class: "mood-text") %>
-            <select id="mood-dropdown" name="mood-dropdown">
-                <option value="volvo">Romantic</option>
-                <option value="saab">Casual</option>
-                <option value="fiat">Feast</option>
-                <option value="fiat">Social</option>
-                <option value="fiat">Lazy</option>
+            <select id="mood-dropdown" name="query">
+                <option value="">Your Mood</option>
+                <option value="romantic">Romantic</option>
+                <option value="casual">Casual</option>
+                <option value="feast">Feast</option>
+                <option value="social">Social</option>
+                <option value="lazy">Lazy</option>
             </select>
         </div>
-        <%= link_to restaurants_path do %>
-            <div class="search-icon"><i class="fas fa-search"></i></div>
+        <%= button_tag type: "submit", class: "search-submit-button" do %>
+            <i class="fas fa-search"></i>
         <% end %>
-        <%# <%= submit_tag("Search") %>
     <% end %>
 </div>

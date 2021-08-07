@@ -23,7 +23,8 @@ Restaurant.create([
     price: 100,
     description: 'Delicious Vietnamese Restaurant',
     rating: 4.2,
-    mood_rating: 96
+    mood_rating: 96,
+    mood_name: "Romantic"
   },
   {
     name: 'Hao Phong',
