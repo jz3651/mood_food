@@ -153,7 +153,7 @@ Restaurant.create([
   },
   {
     name: 'Mamasita',
-    location: '11 Collins St, Melbourne',
+    location: 'Level 1/11 Collins St, Melbourne VIC 3000',
     cuisine: 'Mexican',
     price: 120,
     description: 'Delicious Mexican Restaurant',

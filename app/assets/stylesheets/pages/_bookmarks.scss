@@ -15,8 +15,8 @@ $accent-color: #361999;
 }
 
 .bookmark-card {
-  width: 420px;
-  height: 340px;
+  width: 360px;
+  height: 300px;
   margin: 1em;
   perspective: 1500px;
   .bookmark-card-content {
@@ -118,6 +118,7 @@ $accent-color: #361999;
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: center;
     color: $accent-color;
     grid-row: 3;
     &:not(:first-of-type):before {
@@ -163,6 +164,7 @@ $accent-color: #361999;
     overflow: auto;
     color: $accent-color;
     padding-right: 10px;
+    text-align: center;
   }
 
   .card-location,

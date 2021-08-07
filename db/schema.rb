@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_05_095808) do
+ActiveRecord::Schema.define(version: 2021_08_07_010655) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -36,6 +36,9 @@ ActiveRecord::Schema.define(version: 2021_08_05_095808) do
     t.float "latitude"
     t.float "longitude"
     t.integer "mood_rating"
+    t.integer "date_rating"
+    t.integer "social_rating"
+    t.integer "rush_rating"
   end
 
   create_table "reviews", force: :cascade do |t|
