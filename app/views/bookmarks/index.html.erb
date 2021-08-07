@@ -1,16 +1,51 @@
-<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
-  Bookmarks
-</div>
-<div class ="bookmark-container">
-
-    <% @bookmarks.any? %>
-        <% @bookmarks.each do |bookmark|%>
-            <div class="bookmark-card">
-                <img class= "bookmark-img" src="https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=668&q=80">
-                <h3><%= bookmark.restaurant.name %></h3>
-                <span>$<%= bookmark.restaurant.price%></span>
-                <span><%= bookmark.restaurant.location%></span>
+<div class="bookmark-wrapper">
+  <% @bookmarks.each do |bookmark| %>
+  <div class="bookmark-card">
+      <input type="checkbox" id="<%= bookmark.id %>" class="more" aria-hidden="true">
+      <div class="bookmark-card-content">
+          <div class="card-front" style="background-image: url(
+          <% if bookmark.restaurant.cuisine == "Mexican" %>
+            <%= "https://source.unsplash.com/Y0zbn9lPCEU" %>
+          <%elsif bookmark.restaurant.cuisine == "Italian" %>
+            <%="https://source.unsplash.com/MqT0asuoIcU" %>
+          <%else %>
+            <%= "https://source.unsplash.com/Y11iTVE2DFA" %>
+          <% end %> ">
+            <div class="card-inner">
+              <h2><%=  bookmark.restaurant.name %></h2>
+                <div class="bookmark-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              <label for="<%= bookmark.id %>" class="card-button" aria-hidden="true">
+                Details
+              </label>
             </div>
-        <% end %>
-
+          </div>
+          <div class="card-back">
+            <div class="card-inner">
+              <div class="card-info">
+                <span>94%</span>
+                <div class="card-icon">
+                  <i class="fas fa-hamburger"></i>
+                  <span>mood</span>
+                </div>
+              </div>
+              <div class="card-description">
+                <p> <%= bookmark.restaurant.description %> </p>
+              </div>
+              <div class="card-location"><%= bookmark.restaurant.location %></div>
+              <div class="card-price"><%= bookmark.restaurant.price %></div>
+              <label for="<%= bookmark.id %>" class="card-button return" aria-hidden="true">
+              <i class="fas fa-arrow-left"></i>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
 </div>
