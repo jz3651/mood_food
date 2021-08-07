@@ -15,6 +15,7 @@ Restaurant.create([
     description: 'Delicious Vietnamese Restaurant',
     rating: 4.4,
     mood_rating: 88,
+    mood_name: "Romantic",
     date_rating: 5,
     social_rating: 3,
     rush_rating: 2
@@ -27,7 +28,8 @@ Restaurant.create([
     description: 'Delicious Vietnamese Restaurant',
     rating: 4.2,
     mood_rating: 96,
-    date_rating: 2,
+    mood_name: "Romantic",
+    date_rating: 5,
     social_rating: 3,
     rush_rating: 5
   },
@@ -39,9 +41,10 @@ Restaurant.create([
     description: 'Delicious Vietnamese Restaurant',
     rating: 4.2,
     mood_rating: 84,
-    date_rating: 4,
-    social_rating: 4,
-    rush_rating: 3
+    mood_name: "Casual",
+    date_rating: 5,
+    social_rating: 3,
+    rush_rating: 2
   },
   {
     name: 'Huong Viet Vegetarian & Vegan',
@@ -51,9 +54,10 @@ Restaurant.create([
     description: 'Delicious Vietnamese Restaurant',
     rating: 4.6,
     mood_rating: 88,
-    date_rating: 3,
-    social_rating: 4,
-    rush_rating: 4
+    mood_name: "Casual",
+    date_rating: 5,
+    social_rating: 3,
+    rush_rating: 2
   },
   {
     name: 'Pho Tam',
@@ -63,6 +67,7 @@ Restaurant.create([
     description: 'Delicious Vietnamese Restaurant',
     rating: 4.5,
     mood_rating: 75,
+    mood_name: "Casual",
     date_rating: 5,
     social_rating: 3,
     rush_rating: 2
@@ -99,6 +104,7 @@ Restaurant.create([
     description: 'Delicious Italian Restaurant',
     rating: 4.4,
     mood_rating: 40,
+    mood_name: "Casual",
     date_rating: 4,
     social_rating: 4,
     rush_rating: 4
@@ -111,6 +117,7 @@ Restaurant.create([
     description: 'Delicious Italian Restaurant',
     rating: 4.3,
     mood_rating: 20,
+    mood_name: "Romantic",
     date_rating: 5,
     social_rating: 5,
     rush_rating: 1
@@ -123,7 +130,8 @@ Restaurant.create([
     description: 'Delicious Italian Restaurant',
     rating: 4.3,
     mood_rating: 10,
-    date_rating: 2,
+    mood_name: "Romantic",
+    date_rating: 5,
     social_rating: 3,
     rush_rating: 2
   },
@@ -147,7 +155,8 @@ Restaurant.create([
     description: 'Delicious Mexican Restaurant',
     rating: 4.3,
     mood_rating: 20,
-    date_rating: 4,
+    mood_name: "Casual",
+    date_rating: 5,
     social_rating: 3,
     rush_rating: 2
   },
@@ -159,6 +168,7 @@ Restaurant.create([
     description: 'Delicious Mexican Restaurant',
     rating: 4.3,
     mood_rating: 15,
+    mood_name: "Casual",
     date_rating: 4,
     social_rating: 4,
     rush_rating: 5
@@ -171,6 +181,7 @@ Restaurant.create([
     description: 'Delicious Mexican Restaurant',
     rating: 4.3,
     mood_rating: 12,
+    mood_name: "Casual",
     date_rating: 4,
     social_rating: 5,
     rush_rating: 2
@@ -183,7 +194,8 @@ Restaurant.create([
     description: 'Delicious Mexican Restaurant',
     rating: 4.3,
     mood_rating: 20,
-    date_rating: 3,
+    mood_name: "Romantic",
+    date_rating: 5,
     social_rating: 3,
     rush_rating: 1
   }

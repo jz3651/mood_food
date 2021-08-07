@@ -142,6 +142,7 @@ a:hover {
 
 .mood-text {
     color: #FF6495;
+    font-weight: bold;
 }
 
 .form-tag {
@@ -149,8 +150,72 @@ a:hover {
     flex-direction: column;
 }
 
+
 .search-icon {
     font-size: 35px;
     margin-left: 10px;
 }
 
+.restaurant-search {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 50px;
+}
+
+.search-submit-button {
+    border: none;
+    color: white;
+    padding: 0;
+    background: none;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    margin-left: 40px;
+    background-color: #FF6495;
+    border-radius: 50%;
+}
+
+.form-tag {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid lightgray;
+    padding-right: 30px;
+    padding-left: 30px;
+    .form-control {
+        border: none;
+        padding: 0px;
+        width: 200px;
+    }
+    .form-control:focus {
+        border: none;
+        border-color: transparent;
+        outline: 0;
+        box-shadow: 0 0 transparent;
+    }
+    :hover {
+        background-color: lightgray;
+        opacity: 0.8;
+    }
+}
+
+.custom-class {
+    border-right: 0px solid transparent;
+}
+
+.search-label {
+    font-weight: bold;
+    margin: 0px;
+}
+
+#mood-dropdown {
+    border: none;
+    :focus-visible {
+        border-color: transparent;
+    }
+}

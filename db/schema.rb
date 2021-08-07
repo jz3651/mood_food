@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(version: 2021_08_07_010655) do
     t.float "latitude"
     t.float "longitude"
     t.integer "mood_rating"
+    t.text "mood_name"
     t.integer "date_rating"
     t.integer "social_rating"
     t.integer "rush_rating"
