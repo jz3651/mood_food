@@ -10,9 +10,11 @@
 
 .restaurant-card {
     height: 400px;
-    margin: 30px 4px;
-    border-bottom: 1px solid lightgray;
+    margin: 30px 10px;
     max-width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 0px;
 }
 
 .image-segment {
@@ -21,6 +23,7 @@
 }
 
 .image-segment img {
+    position: relative;
     border-radius: 10px;
     width: 100%;
     height: 200px;
@@ -80,4 +83,54 @@ p {
 
 .search-box {
     border-radius: 10px;
+    form{
+        display: -webkit-inline-box;
+        .form-control{
+            width: 75%;
+        }
+        input {
+            padding-left: 20px;
+        }
+    }
+}
+
+.restaurants {
+    display: flex;
+    justify-content: center;
+
+
+    .restaurant-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-content: center;
+    }
+}
+
+.restaurant-icons {
+    position: relative;
+    margin-left: 27px;
+    margin-right: 10px;
+    top: -65px;
+}
+
+.search-button-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.search-buttons-wrapper {
+    
+    display: flex;
+    justify-content: center;
+
+    .btn.btn-primary {
+        color: #FF6495;
+        background-color: transparent;
+        border: none;
+        margin-right: 10px;
+    }
+    .list-map-buttons {
+        margin-left: 5px;
+        padding-top: 1px;
+    }
 }
