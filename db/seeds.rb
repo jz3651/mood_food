@@ -14,7 +14,10 @@ Restaurant.create([
     price: 50,
     description: 'Delicious Vietnamese Restaurant',
     rating: 4.4,
-    mood_rating: 88
+    mood_rating: 88,
+    date_rating: 5,
+    social_rating: 3,
+    rush_rating: 2
   },
   {
     name: 'Sapa Hills',
@@ -23,7 +26,10 @@ Restaurant.create([
     price: 100,
     description: 'Delicious Vietnamese Restaurant',
     rating: 4.2,
-    mood_rating: 96
+    mood_rating: 96,
+    date_rating: 5,
+    social_rating: 3,
+    rush_rating: 2
   },
   {
     name: 'Hao Phong',
@@ -32,7 +38,10 @@ Restaurant.create([
     price: 120,
     description: 'Delicious Vietnamese Restaurant',
     rating: 4.2,
-    mood_rating: 84
+    mood_rating: 84,
+    date_rating: 5,
+    social_rating: 3,
+    rush_rating: 2
   },
   {
     name: 'Huong Viet Vegetarian & Vegan',
@@ -41,7 +50,10 @@ Restaurant.create([
     price: 80,
     description: 'Delicious Vietnamese Restaurant',
     rating: 4.6,
-    mood_rating: 88
+    mood_rating: 88,
+    date_rating: 5,
+    social_rating: 3,
+    rush_rating: 2
   },
   {
     name: 'Pho Tam',
@@ -50,7 +62,10 @@ Restaurant.create([
     price: 100,
     description: 'Delicious Vietnamese Restaurant',
     rating: 4.5,
-    mood_rating: 75
+    mood_rating: 75,
+    date_rating: 5,
+    social_rating: 3,
+    rush_rating: 2
   },
   {
     name: 'Tipo 00',
@@ -59,7 +74,10 @@ Restaurant.create([
     price: 50,
     description: 'Delicious Italian Restaurant',
     rating: 4.5,
-    mood_rating: 60
+    mood_rating: 60,
+    date_rating: 5,
+    social_rating: 3,
+    rush_rating: 2
   },
   {
     name: '+39 Pizzeria',
@@ -68,7 +86,10 @@ Restaurant.create([
     price: 100,
     description: 'Delicious Italian Restaurant',
     rating: 4.4,
-    mood_rating: 50
+    mood_rating: 50,
+    date_rating: 5,
+    social_rating: 3,
+    rush_rating: 2
   },
   {
     name: 'DOC Pizza & Mozzarella Bar',
@@ -77,7 +98,10 @@ Restaurant.create([
     price: 120,
     description: 'Delicious Italian Restaurant',
     rating: 4.4,
-    mood_rating: 40
+    mood_rating: 40,
+    date_rating: 5,
+    social_rating: 3,
+    rush_rating: 2
   },
   {
     name: 'Maccaroni Trattoria Italiana',
@@ -86,7 +110,10 @@ Restaurant.create([
     price: 80,
     description: 'Delicious Italian Restaurant',
     rating: 4.3,
-    mood_rating: 20
+    mood_rating: 20,
+    date_rating: 5,
+    social_rating: 3,
+    rush_rating: 2
   },
   {
     name: 'Osteria Ilaria',
@@ -95,7 +122,10 @@ Restaurant.create([
     price: 100,
     description: 'Delicious Italian Restaurant',
     rating: 4.3,
-    mood_rating: 10
+    mood_rating: 10,
+    date_rating: 5,
+    social_rating: 3,
+    rush_rating: 2
   },
   {
     name: 'Trippy Taco',
@@ -104,7 +134,10 @@ Restaurant.create([
     price: 50,
     description: 'Delicious Mexican Restaurant',
     rating: 4.3,
-    mood_rating: 10
+    mood_rating: 10,
+    date_rating: 5,
+    social_rating: 3,
+    rush_rating: 2
   },
   {
     name: 'La Tortilleria',
@@ -113,16 +146,22 @@ Restaurant.create([
     price: 100,
     description: 'Delicious Mexican Restaurant',
     rating: 4.3,
-    mood_rating: 20
+    mood_rating: 20,
+    date_rating: 5,
+    social_rating: 3,
+    rush_rating: 2
   },
   {
     name: 'Mamasita',
-    location: '11 Collins St, Melbourne',
+    location: 'Level 1/11 Collins St, Melbourne VIC 3000',
     cuisine: 'Mexican',
     price: 120,
     description: 'Delicious Mexican Restaurant',
     rating: 4.3,
-    mood_rating: 15
+    mood_rating: 15,
+    date_rating: 5,
+    social_rating: 3,
+    rush_rating: 2
   },
   {
     name: 'Radio Mexico',
@@ -131,7 +170,10 @@ Restaurant.create([
     price: 80,
     description: 'Delicious Mexican Restaurant',
     rating: 4.3,
-    mood_rating: 12
+    mood_rating: 12,
+    date_rating: 5,
+    social_rating: 3,
+    rush_rating: 2
   },
   {
     name: 'Fonda',
@@ -140,7 +182,10 @@ Restaurant.create([
     price: 100,
     description: 'Delicious Mexican Restaurant',
     rating: 4.3,
-    mood_rating: 20
+    mood_rating: 20,
+    date_rating: 5,
+    social_rating: 3,
+    rush_rating: 2
   }
 ])
 
