@@ -1,33 +1,27 @@
 <div class="restaurant-index">
   <div class="restaurants-container">
-    <div class="search-box">
-      <%= form_tag restaurants_path, method: :get do %>
-        <%= text_field_tag :query,
-            params[:query],
-            class: "form-control",
-            placeholder: "Find a restaurant"
-        %>
-      <%= submit_tag "Search", class: "btn btn-primary" %>
-      <% end %>
-      <div class="filter-button"></div>
-    </div>
 
-    <button type="button" id= "list-btn" class="btn btn-primary">List</button>
-    <button type="button" id= "map-btn" class="btn btn-primary">Map</button>
+
 
 
     <div id="js-list">
-      <div class="restaurants d-flex flex-wrap">
-        <ul>
-            <% cache @restaurants do %>
-                <%= render @restaurants %>
-            <% end %>
-        </ul>
+      <% if params[:query].present?%>
+        <h2><%=params[:query].capitalize%> Restaurants</h2>
+      <% else %>
+        <h2>All Restaurants</h2>
+      <% end%>
+      <div class="restaurants">
+        <div class="restaurant-wrapper">
+              <% cache @restaurants do %>
+                  <%= render @restaurants %>
+              <% end %>
+        </div>
       </div>
     </div>
+
     <div id="js-map" class="d-none">
       <div id="map"
-        style="width: 100%; height: 300px;"
+        style="width: 100%; height: 500px;"
         data-markers="<%= @markers.to_json %>"
         data-mapbox-api-key="pk.eyJ1Ijoibmlja3N5cGFudHMiLCJhIjoiY2tyaDdnMm51NXMzdzJvcXVweHNqcGY5cyJ9.20i0aGnIAdLyDqquICxekQ">
       </div>

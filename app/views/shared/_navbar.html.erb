@@ -7,6 +7,26 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
+      <div class="search-box">
+      <%= form_tag restaurants_path, method: :get do %>
+        <%= text_field_tag :query,
+            params[:query],
+            class: "form-control",
+            placeholder: "Find a restaurant"
+        %>
+        <div class= "search-buttons-wrapper"> 
+          <%= submit_tag "Search", class: "btn btn-primary" %>
+          <% end %>
+          <div class="filter-button"></div>
+          <% if params[:query].present?%>
+          <div class = "list-map-buttons">
+            <button type="button" id= "list-btn" class="btn btn-primary">List</button>
+            <button type="button" id= "map-btn" class="btn btn-primary">Map</button>
+          </div>
+          <% end%>
+      </div>
+    </div>
+
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">

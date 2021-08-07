@@ -10,6 +10,7 @@ require("channels")
 require("textillate")
 require("lettering.js")
 require("animate.css")
+require("tippy.js")
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
@@ -26,6 +27,10 @@ require("animate.css")
 
 // External imports
 import "bootstrap";
+
+import tippy from 'tippy.js';
+import 'tippy.js/dist/tippy.css'; // optional for styling
+window.tippy = tippy;
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
