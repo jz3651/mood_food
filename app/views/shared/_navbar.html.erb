@@ -14,16 +14,14 @@
             class: "form-control",
             placeholder: "Find a restaurant"
         %>
-        <div class= "search-buttons-wrapper"> 
+        <div class= "search-buttons-wrapper">
           <%= submit_tag "Search", class: "btn btn-primary" %>
           <% end %>
           <div class="filter-button"></div>
-          <% if params[:query].present?%>
           <div class = "list-map-buttons">
             <button type="button" id= "list-btn" class="btn btn-primary">List</button>
             <button type="button" id= "map-btn" class="btn btn-primary">Map</button>
           </div>
-          <% end%>
       </div>
     </div>
 

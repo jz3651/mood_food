@@ -2,20 +2,8 @@
     <h1 class="title1">Today, I feel</h1>
     <h1 class="title-animate"><span id="rotate">mood</span></h1>
     <img src="https://source.unsplash.com/vJsj-hgOEG0" alt="">
-</div>
-<div class="panel" data-color="blue">
-    <div class="title-description">
-        <h1 class="title2">find and curate restaurants using your mood</h1><br><br>
-        <div class="subtitle-description">
-            <h4 class="subtitle">choosing a restaurant for the right occasion can be a hassle. tell us what you feel like, and we'll take care of the rest.</h4>
-        </div>
-    </div>
-</div>
-<div class="panel" data-color="purple">
-    <h1 class="title">mood food</h1>
-    <div class="subtitle"><%= link_to "sign up", new_user_registration_path %> to see your recommendations or search below to get started</div>
-</div>
-<div class="panel" data-color="purple">
+
+    <div class="panel" data-color="purple">
     <%= form_tag restaurants_path, method: :get, :class => "restaurant-search" do %>
         <div class="form-tag">
             <%= label_tag(:q, "Location", class: "search-label") %>
@@ -48,4 +36,21 @@
             <i class="fas fa-search"></i>
         <% end %>
     <% end %>
+      <h3 class="BS">Personalised recs without the BS.</h3>
+
+</div>
+</div>
+
+
+<div class="panel" data-color="blue">
+    <div class="title-description">
+        <h1 class="title2">find and curate restaurants using your mood</h1><br><br>
+        <div class="subtitle-description">
+            <h4 class="subtitle">choosing a restaurant for the right occasion can be a hassle. tell us what you feel like, and we'll take care of the rest.</h4>
+        </div>
+    </div>
+</div>
+<div class="panel" data-color="purple">
+    <h1 class="title">mood food</h1>
+    <div class="subtitle"><%= link_to "sign up", new_user_registration_path %> to see your recommendations or search below to get started</div>
 </div>
