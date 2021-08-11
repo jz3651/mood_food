@@ -22,7 +22,8 @@
             <%= text_field_tag :query,
                 params[:query],
                 class: "form-control",
-                placeholder: "Where to eat?"
+                placeholder: "Where to eat?",
+                name: "query[]"
             %>
         </div>
         <div class="form-tag">
@@ -30,13 +31,14 @@
             <%= text_field_tag :query,
                 params[:query],
                 class: "form-control",
-                placeholder: "What do you feel like?"
+                placeholder: "What do you feel like?",
+                name: "query[]"
             %>
         </div>
         <div class="custom-class form-tag">
             <%= label_tag(:q, "Mood:", class: "mood-text") %>
-            <select id="mood-dropdown" name="query">
-                <option value="">Your Mood</option>
+            <select id="mood-dropdown" name="query[]" class="mood-dropdown-list">
+                <option value="" data-placeholder>Your Mood</option>
                 <option value="romantic">Romantic</option>
                 <option value="casual">Casual</option>
                 <option value="feast">Feast</option>
