@@ -151,6 +151,7 @@ a:hover {
 .mood-text {
     color: #FF6495;
     font-weight: bold;
+    margin: 0;
 }
 
 .form-tag {
@@ -168,9 +169,7 @@ a:hover {
     display: flex;
     align-items: center;
     background-color: white;
-    height: 100px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    height: 90px;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 50px;
@@ -187,6 +186,11 @@ a:hover {
     margin-left: 40px;
     background-color: #FF6495;
     border-radius: 50%;
+    opacity: 0.6;
+    transition: 0.3s;
+    &:hover {
+        opacity: 1;
+    }
 }
 
 .form-tag {
@@ -206,10 +210,10 @@ a:hover {
         outline: 0;
         box-shadow: 0 0 transparent;
     }
-    :hover {
-        background-color: lightgray;
-        opacity: 0.8;
-    }
+    // :hover {
+    //     background-color: lightgray;
+    //     opacity: 0.8;
+    // }
 }
 
 .custom-class {
@@ -221,9 +225,13 @@ a:hover {
     margin: 0px;
 }
 
-#mood-dropdown {
+.mood-dropdown-list {
     border: none;
-    :focus-visible {
-        border-color: transparent;
-    }
+    width: 110%;
+    cursor: pointer;
+}
+
+.mood-dropdown-list:focus-visible {
+    outline: none;
+    box-shadow: none;
 }

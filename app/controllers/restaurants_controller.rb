@@ -2,11 +2,11 @@ class RestaurantsController < ApplicationController
   def index
     @bookmark = Bookmark.new
     if params[:query].present?
-      @restaurants = Restaurant.search_by_name_and_cuisine(params[:query]).order(created_at: :asc)
+      @restaurants = Restaurant.order(mood_rating: :desc, created_at: :desc).search_by_name_and_cuisine(params[:query])
     else
-      @restaurants = Restaurant.all.order(mood_rating: :desc)
+      @restaurants = Restaurant.all.order(mood_rating: :desc, created_at: :desc)
     end
-
+    @query = params[:query]
     @markers = @restaurants.geocoded.map do |res|
       {
         lat: res.latitude,
