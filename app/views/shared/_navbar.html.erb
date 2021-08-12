@@ -6,25 +6,39 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-
-      <div class="search-box">
-      <%= form_tag restaurants_path, method: :get do %>
-        <%= text_field_tag :query,
-            params[:query],
-            class: "form-control",
-            placeholder: "Find a restaurant"
-        %>
-        <div class= "search-buttons-wrapper">
-          <%= submit_tag "Search", class: "btn btn-primary" %>
-          <% end %>
-          <div class="filter-button"></div>
-          <div class = "list-map-buttons">
-            <button type="button" id= "list-btn" class="btn btn-primary">List</button>
-            <button type="button" id= "map-btn" class="btn btn-primary">Map</button>
-          </div>
-      </div>
-    </div>
-
+  <div class="navbar-search-container">
+    <%= form_tag restaurants_path, method: :get, :class => "navbar-search" do %>
+        <div class="nav-form-tag">
+            <%= text_field_tag :query,
+                params[:query],
+                class: "form-control",
+                placeholder: "Location",
+                name: "query[]"
+            %>
+        </div>
+        <div class="nav-form-tag">
+            <%= text_field_tag :query,
+                params[:query],
+                class: "form-control",
+                placeholder: "Cuisine",
+                name: "query[]"
+            %>
+        </div>
+        <div class="custom-class nav-form-tag">
+            <select id="mood-dropdown" name="query[]" class="mood-dropdown-list">
+                <option value="" data-placeholder>Your Mood</option>
+                <option value="romantic">Romantic</option>
+                <option value="casual">Casual</option>
+                <option value="feast">Feast</option>
+                <option value="social">Social</option>
+                <option value="lazy">Lazy</option>
+            </select>
+        </div>
+        <%= button_tag type: "submit", class: "navbar-search-button" do %>
+            <i class="fas fa-search"></i>
+        <% end %>
+    <% end %>
+  </div>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
