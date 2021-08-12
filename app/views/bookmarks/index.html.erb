@@ -12,7 +12,7 @@
             <%= "https://source.unsplash.com/Y11iTVE2DFA" %>
           <% end %> ">
             <div class="card-inner">
-              <h2><%=  bookmark.restaurant.name %></h2>
+              <h4><%=  bookmark.restaurant.name %></h4>
                 <div class="bookmark-rating">
                   <% if bookmark.restaurant.rating < 2 %>
                     <i class="fas fa-star" style="color:white"></i>
@@ -59,7 +59,7 @@
                 <span><%=  bookmark.restaurant.rush_rating %></span>
                 <div class="card-icon">
                   <i class="far fa-clock"></i>
-                  <span>Rush</span>
+                  <span>Quick</span>
                 </div>
               </div>
               <div class="card-description">

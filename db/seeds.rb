@@ -31,7 +31,7 @@ Restaurant.create([
     mood_name: "Romantic",
     date_rating: 5,
     social_rating: 3,
-    rush_rating: 2
+    rush_rating: 5
   },
   {
     name: 'Hao Phong',
@@ -80,9 +80,9 @@ Restaurant.create([
     description: 'Delicious Italian Restaurant',
     rating: 4.5,
     mood_rating: 60,
-    date_rating: 5,
-    social_rating: 3,
-    rush_rating: 2
+    date_rating: 4,
+    social_rating: 4,
+    rush_rating: 3
   },
   {
     name: '+39 Pizzeria',
@@ -92,9 +92,9 @@ Restaurant.create([
     description: 'Delicious Italian Restaurant',
     rating: 4.4,
     mood_rating: 50,
-    date_rating: 5,
-    social_rating: 3,
-    rush_rating: 2
+    date_rating: 2,
+    social_rating: 2,
+    rush_rating: 5
   },
   {
     name: 'DOC Pizza & Mozzarella Bar',
@@ -104,10 +104,11 @@ Restaurant.create([
     description: 'Delicious Italian Restaurant',
     rating: 4.4,
     mood_rating: 40,
-    # mood_name: "Casual",
-    date_rating: 5,
-    social_rating: 3,
-    rush_rating: 2
+
+    mood_name: "Casual",
+    date_rating: 4,
+    social_rating: 4,
+    rush_rating: 4
   },
   {
     name: 'Maccaroni Trattoria Italiana',
@@ -119,8 +120,8 @@ Restaurant.create([
     mood_rating: 20,
     # mood_name: "Romantic",
     date_rating: 5,
-    social_rating: 3,
-    rush_rating: 2
+    social_rating: 5,
+    rush_rating: 1
   },
   {
     name: 'Osteria Ilaria',
@@ -143,9 +144,9 @@ Restaurant.create([
     description: 'Delicious Mexican Restaurant',
     rating: 4.3,
     mood_rating: 10,
-    date_rating: 5,
-    social_rating: 3,
-    rush_rating: 2
+    date_rating: 3,
+    social_rating: 5,
+    rush_rating: 0
   },
   {
     name: 'La Tortilleria',
@@ -162,16 +163,17 @@ Restaurant.create([
   },
   {
     name: 'Mamasita',
-    location: 'Level 1/11 Collins St, Melbourne VIC 3000',
+    location: 'Level 1/11 Collins St, Melbourne',
     cuisine: 'Mexican',
     price: 120,
     description: 'Delicious Mexican Restaurant',
     rating: 4.3,
     mood_rating: 15,
-    # mood_name: "Casual",
-    date_rating: 5,
-    social_rating: 3,
-    rush_rating: 2
+
+    mood_name: "Casual",
+    date_rating: 4,
+    social_rating: 4,
+    rush_rating: 5
   },
   {
     name: 'Radio Mexico',
@@ -181,9 +183,10 @@ Restaurant.create([
     description: 'Delicious Mexican Restaurant',
     rating: 4.3,
     mood_rating: 12,
-    # mood_name: "Casual",
-    date_rating: 5,
-    social_rating: 3,
+
+    mood_name: "Casual",
+    date_rating: 4,
+    social_rating: 5,
     rush_rating: 2
   },
   {
@@ -197,7 +200,7 @@ Restaurant.create([
     # mood_name: "Romantic",
     date_rating: 5,
     social_rating: 3,
-    rush_rating: 2
+    rush_rating: 1
   }
 ])
 

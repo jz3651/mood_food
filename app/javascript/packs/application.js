@@ -11,6 +11,7 @@ require("textillate")
 require("lettering.js")
 require("animate.css")
 require("tippy.js")
+require("easydropdown")
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
@@ -27,7 +28,7 @@ require("tippy.js")
 
 // External imports
 import "bootstrap";
-
+import easydropdown from 'easydropdown';
 import tippy from 'tippy.js';
 import 'tippy.js/dist/tippy.css'; // optional for styling
 window.tippy = tippy;
@@ -47,6 +48,7 @@ import { likeBtnAnimated } from '../components/like-animation';
 import { initMapbox } from '../plugins/init_mapbox';
 import { initToggleMap } from '../plugins/map_restaurant_toggle';
 import { turbolinkScroll } from '../components/turbolink-scroll';
+import { dropDownStyle } from '../components/mood-dropdown';
 Turbolinks.scroll = {};
 
 document.addEventListener('turbolinks:load', () => {
@@ -54,4 +56,5 @@ document.addEventListener('turbolinks:load', () => {
   likeBtnAnimated();
   initToggleMap();
   turbolinkScroll();
+  dropDownStyle();
 });

@@ -6,7 +6,7 @@
 
     <div id="js-list">
       <% if params[:query].present?%>
-        <h2><%=params[:query].capitalize%> Restaurants</h2>
+        <h2><%=params[:query][1].capitalize%> Restaurants</h2>
       <% else %>
         <h2>All Restaurants</h2>
       <% end%>
