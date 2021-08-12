@@ -14,12 +14,12 @@ class BookmarksController < ApplicationController
     @bookmark.restaurant = @restaurant
     @bookmark.user = current_user
     @bookmark.save
-    redirect_to restaurants_path(query: params[:query])
+    redirect_to restaurants_path(location: session[:params_location], mood: session[:params_mood], cuisine: session[:params_cuisine])
   end
 
   def destroy
     @bookmark = Bookmark.find(params[:id])
     @bookmark.destroy
-    redirect_to restaurants_path(query: params[:query])
+    redirect_to restaurants_path(location: params[:location], mood: params[:mood], cuisine: params[:cuisine])
   end
 end
