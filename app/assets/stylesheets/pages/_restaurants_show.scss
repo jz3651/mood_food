@@ -29,12 +29,118 @@
 }
 
 .restaurant-title {
+  overflow: hidden;
+  display: inline-block;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 65%;
+  left: 10%;
+  border-radius: 5px;
   transform: translate(-50%, -50%);
   font-family: 'Poppins', sans-serif;
   color: white;
+}
+
+
+.review-summary{
+  overflow: hidden;
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.reviews-container{
+  position: relative;
+  width: 90%;
+  margin: 1rem;
+  max-width: 80rem;
+}
+
+.review-data{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: stretch;
+}
+
+.mood-match{
+    width: calc(33.33% - 1.5rem);
+    display: flex;
+    flex-direction: row;
+    margin: 0px 0.75rem 1.5rem;
+    box-sizing: border-box;
+    background: white;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    position: relative;
+    cursor: pointer;
+    transition: all 200ms ease 0s;
+    will-change: transform;
+    outline: none;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.mood-details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 3rem;
+}
+
+.mood-rating{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mood-numbers{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: pink;
+    font-size: 28px;
+
+}
+
+.moo
+.aggregate-rating{
+    width: calc(33.33% - 1.5rem);
+    display: flex;
+    flex-direction: row;
+    margin: 0px 0.75rem 1.5rem;
+    box-sizing: border-box;
+    background: white;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    position: relative;
+    cursor: pointer;
+    transition: all 200ms ease 0s;
+    will-change: transform;
+    outline: none;
+}
+
+.total-reviews{
+    width: calc(33.33% - 1.5rem);
+    display: flex;
+    flex-direction: row;
+    margin: 0px 0.75rem 1.5rem;
+    box-sizing: border-box;
+    background: white;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    position: relative;
+    cursor: pointer;
+    transition: all 200ms ease 0s;
+    will-change: transform;
+    outline: none;
+}
+
+.review-background{
+  background-color: white;
+  padding-top: 20px;
+
 }
 
 .review_info {
@@ -42,31 +148,40 @@
 }
 
 .review-header{
-  margin-top: 40px;
   font-family: 'Poppins', sans-serif;
   text-align: center;
-  color: white;
+  color: rgb(28, 28, 28);
   display: flex;
   justify-content: center;
 }
 
 .review {
-  padding: 30px;
+  padding: 10px;
   margin: 50px;
   width: auto;
   height: auto;
-  background-color: #FF6495;;
   border: solid, 1px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  // box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   font-family: 'Poppins', sans-serif;
-  text-align: center;
+  text-align: left;
+}
+
+.review-date {
+  opacity: 0.7;
+}
+
+.review-text {
+  margin-top: 5px;
+  opacity: 0.7;
 }
 
 .link-menu {
+    padding-top: 40px;
     height: 30vh;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 0px;
     color: #FF6495;
+    background: #361899;
     text-align: center;
     animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 1s;
@@ -100,13 +215,12 @@
 }
 
 .title {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
     letter-spacing: 0px;
     color: #FF6495;
     text-align: center;
     animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 1s;
-    font-weight: bold;
     font-size: 100px;
     display: flex;
     justify-content: center;
