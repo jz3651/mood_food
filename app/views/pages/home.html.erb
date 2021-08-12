@@ -1,46 +1,49 @@
 <div class="hero-container panel" data-color="violet">
-    <h1 class="title1">Today, I feel</h1>
-    <h1 class="title-animate"><span id="rotate">mood</span></h1>
+    <div class="hero-title">
+        <h1 class="title1">Today, I feel</h1>
+        <h1 class="title-animate"><span id="rotate">mood</span></h1>
+    </div>
     <img src="https://source.unsplash.com/vJsj-hgOEG0" alt="">
 
     <div class="panel" data-color="purple">
-    <%= form_tag restaurants_path, method: :get, :class => "restaurant-search" do %>
-        <div class="form-tag">
-            <%= label_tag(:q, "Location", class: "search-label") %>
-            <%= text_field_tag :query,
-                params[:query],
-                class: "form-control",
-                placeholder: "Where to eat?",
-                name: "query[]"
-            %>
+        <div class="search-container">
+            <%= form_tag restaurants_path, method: :get, :class => "restaurant-search" do %>
+                <div class="form-tag">
+                    <%= label_tag(:q, "Location", class: "search-label") %>
+                    <%= text_field_tag :query,
+                        params[:query],
+                        class: "form-control",
+                        placeholder: "Where to eat?",
+                        name: "query[]"
+                    %>
+                </div>
+                <div class="form-tag">
+                    <%= label_tag(:q, "Cuisine", class: "search-label")%>
+                    <%= text_field_tag :query,
+                        params[:query],
+                        class: "form-control",
+                        placeholder: "What do you feel like?",
+                        name: "query[]"
+                    %>
+                </div>
+                <div class="custom-class form-tag">
+                    <%= label_tag(:q, "Mood:", class: "mood-text") %>
+                    <select id="mood-dropdown" name="query[]" class="mood-dropdown-list">
+                        <option value="" data-placeholder>Your Mood</option>
+                        <option value="romantic">Romantic</option>
+                        <option value="casual">Casual</option>
+                        <option value="feast">Feast</option>
+                        <option value="social">Social</option>
+                        <option value="lazy">Lazy</option>
+                    </select>
+                </div>
+                <%= button_tag type: "submit", class: "search-submit-button" do %>
+                    <i class="fas fa-search"></i>
+                <% end %>
+            <% end %>
+            <h3 class="BS text-center">Personalised recs without the BS.</h3>
         </div>
-        <div class="form-tag">
-            <%= label_tag(:q, "Cuisine", class: "search-label")%>
-            <%= text_field_tag :query,
-                params[:query],
-                class: "form-control",
-                placeholder: "What do you feel like?",
-                name: "query[]"
-            %>
-        </div>
-        <div class="custom-class form-tag">
-            <%= label_tag(:q, "Mood:", class: "mood-text") %>
-            <select id="mood-dropdown" name="query[]" class="mood-dropdown-list">
-                <option value="" data-placeholder>Your Mood</option>
-                <option value="romantic">Romantic</option>
-                <option value="casual">Casual</option>
-                <option value="feast">Feast</option>
-                <option value="social">Social</option>
-                <option value="lazy">Lazy</option>
-            </select>
-        </div>
-        <%= button_tag type: "submit", class: "search-submit-button" do %>
-            <i class="fas fa-search"></i>
-        <% end %>
-    <% end %>
-      <h3 class="BS">Personalised recs without the BS.</h3>
-
-</div>
+    </div>
 </div>
 
 

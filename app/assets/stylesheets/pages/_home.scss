@@ -87,7 +87,6 @@ a:hover {
 .hero-container {
     width: 100%;
     height: 100vh;
-    padding-top: 100px;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -105,6 +104,14 @@ a:hover {
         width: 100%;
         height: 100%;
     }
+}
+
+.hero-title {
+    margin-top: 110px;
+}
+
+.search-container {
+    margin-bottom: 215px;
 }
 
 .title-description {
