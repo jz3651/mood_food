@@ -12,13 +12,14 @@ Restaurant.create([
     location: '128 Hopkins St, Footscray',
     cuisine: 'Vietnamese',
     price: 50,
-    description: 'Delicious Vietnamese Restaurant',
+    description: 'A busy, casual eatery popular amongst locals for their piping hot bowls of pho',
     rating: 4.4,
     mood_rating: 88,
     mood_name: "Romantic",
     date_rating: 5,
     social_rating: 3,
-    rush_rating: 2
+    rush_rating: 2,
+    picture: "https://source.unsplash.com/yUSpAw3wrQg"
   },
   {
     name: 'Sapa Hills',
@@ -31,7 +32,8 @@ Restaurant.create([
     mood_name: "Romantic",
     date_rating: 5,
     social_rating: 3,
-    rush_rating: 5
+    rush_rating: 5,
+    picture: "https://source.unsplash.com/yhn4okt6ci0"
   },
   {
     name: 'Hao Phong',
@@ -44,7 +46,8 @@ Restaurant.create([
     mood_name: "Casual",
     date_rating: 5,
     social_rating: 3,
-    rush_rating: 2
+    rush_rating: 2,
+    picture: "https://source.unsplash.com/d1ngW7SNehM"
   },
   {
     name: 'Huong Viet Vegetarian & Vegan',
@@ -57,7 +60,8 @@ Restaurant.create([
     mood_name: "Casual",
     date_rating: 5,
     social_rating: 3,
-    rush_rating: 2
+    rush_rating: 2,
+    picture: "https://source.unsplash.com/bWJVmVQ2Dr0"
   },
   {
     name: 'Pho Tam',
@@ -70,7 +74,8 @@ Restaurant.create([
     mood_name: "Casual",
     date_rating: 5,
     social_rating: 3,
-    rush_rating: 2
+    rush_rating: 2,
+    picture: "https://source.unsplash.com/uP0ngYARhlU"
   },
   {
     name: 'Tipo 00',
