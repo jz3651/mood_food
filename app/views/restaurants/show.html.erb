@@ -1,61 +1,79 @@
 <div show-container>
 <div class="restaurant-container">
   <img src= <%=@restaurant_image%> alt="">
+  <div>
   <div class="restaurant-title">
     <h1><strong><%=@restaurant.name%></strong></h1>
   </div>
-  <div class="mood-rating-text">
-    <p>93%</p>
-  </div>
+
   <button class="like-button"><span id="like-icon"><i class="far fa-heart"></i></span></button>
+  </div>
 </div>
 
 <div class="restaurant-info">
   <div class="title">
-    <h4><strong><%=@restaurant.description%></strong></h4>
+      <h4><strong><%=@restaurant.description%> Reviews</strong></h4>
   </div>
 </div>
 
-
-<div class="review-info">
-  <div class="review-header">
-    <h2>Top Reviews</h2>
-  </div>
-  <% @restaurant_reviews.each do |review| %>
-    <div class="review">
-      <h3><%=review.title%></h3>
-        <p>From <%=review.source%> on <%=review.reviewdate%> </p>
-        <p><%=review.rating%></p>
-        <p><%=review.description%></p>
+<div class="review-summary">
+  <div class="reviews-container">
+    <div class="review-data">
+      <div class="mood-match">
+        <div class="mood-details">
+          <div class="mood-rate">Mood Match</div>
+          <div class="mood-numbers"><%=@restaurant.mood_rating%>%</div>
+        </div>
+      </div>
+        <div class="mood-match">
+        <div class="mood-details">
+          <div class="mood-rate">Real Rating</div>
+          <div class="mood-numbers"><%=@restaurant.rating%>/5</div>
+        </div>
+      </div>
+      <div class="mood-match">
+        <div class="mood-details">
+          <div class="mood-rate">Total Reviews</div>
+          <div class="mood-numbers">567 reviews</div>
+        </div>
+      </div>
     </div>
-  <% end %>
-</div>
-
-
-<div class="location-info">
-  <div id="map"
-     style="width: 100%; height: 300px;"
-     data-markers="<%= @markers.to_json %>"
-     data-mapbox-api-key="pk.eyJ1Ijoibmlja3N5cGFudHMiLCJhIjoiY2tyaDdnMm51NXMzdzJvcXVweHNqcGY5cyJ9.20i0aGnIAdLyDqquICxekQ">
-  </div>
-  <div class="location-description">
-    <h2>Product name</h2>
-    <p>Product description with <strong>relevant info</strong> only.</p>
   </div>
 </div>
 
-<div class="location-info">
-  <div id="map"
-     style="width: 100%; height: 300px;"
-     data-markers="<%= @markers.to_json %>"
-     data-mapbox-api-key="pk.eyJ1Ijoibmlja3N5cGFudHMiLCJhIjoiY2tyaDdnMm51NXMzdzJvcXVweHNqcGY5cyJ9.20i0aGnIAdLyDqquICxekQ">
+<div data-aos="fade-in">
+  <div class="review-background">
+    <div class="review-info">
+        <div class="review-header">
+          <h3>Personalised reviews for you, Sebastian</h3>
+        </div>
+        <% @restaurant_reviews.each do |review| %>
+          <div data-aos="fade-right">
+            <div class="review">
+              <h3>"<%=review.title%>"</h3>
+                <p><%=review.rating%>⭑</p>
+                <p class="review-date">Review made on <%=review.source%>  • <%=review.reviewdate%> </p>
+                <p class="review-text"><%=review.description%></p>
+              <hr>
+            </div>
+          </div>
+        <% end %>
   </div>
 </div>
 
+  <div class="location-info">
+    <div id="map"
+       style="width: 100%; height: 300px;"
+       data-markers="<%= @markers.to_json %>"
+       data-mapbox-api-key="pk.eyJ1Ijoibmlja3N5cGFudHMiLCJhIjoiY2tyaDdnMm51NXMzdzJvcXVweHNqcGY5cyJ9.20i0aGnIAdLyDqquICxekQ">
+    </div>
+  </div>
 
-<div class="link-menu">
-  <h2>Feeling something different?</h2>
-  <div class="link"><%= link_to "Change my mood", restaurants_path %> to search again</div>
-</div>
-</div>
 
+
+  <div class="link-menu">
+    <h2>Feeling something different?</h2>
+    <div class="link"><%= link_to "Change my mood", restaurants_path %> to search again</div>
+  </div>
+  </div>
+</div>

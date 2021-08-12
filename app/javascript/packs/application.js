@@ -32,6 +32,11 @@ import tippy from 'tippy.js';
 import 'tippy.js/dist/tippy.css'; // optional for styling
 window.tippy = tippy;
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
+
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
