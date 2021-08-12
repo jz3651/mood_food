@@ -134,3 +134,8 @@ p {
         padding-top: 1px;
     }
 }
+
+.mapboxgl-map {
+  overflow: visible !important;
+}
+

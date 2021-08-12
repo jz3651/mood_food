@@ -1,3 +1,5 @@
+<div class="bookmark">
+<h2>My Favourites</h2>
 <div class="bookmark-wrapper">
   <% @bookmarks.each do |bookmark| %>
   <div class="bookmark-card">
@@ -15,22 +17,22 @@
               <h4><%=  bookmark.restaurant.name %></h4>
                 <div class="bookmark-rating">
                   <% if bookmark.restaurant.rating < 2 %>
-                    <i class="fas fa-star" style="color:white"></i>
+                    <i class="fas fa-star" style="color:rgba(255, 100, 149, 1)"></i>
                   <% elsif (bookmark.restaurant.rating >= 2 && bookmark.restaurant.rating < 3) %>
                     <% 2.times do %>
-                    <i class="fas fa-star" style="color:white"></i>
+                    <i class="fas fa-star" style="color:rgba(255, 100, 149, 1)"></i>
                     <% end %>
                   <% elsif (bookmark.restaurant.rating >= 3 && bookmark.restaurant.rating < 4) %>
                     <% 3.times do %>
-                    <i class="fas fa-star" style="color:white"></i>
+                    <i class="fas fa-star" style="color:rgba(255, 100, 149, 1)"></i>
                     <% end %>
                   <% elsif (bookmark.restaurant.rating >= 4 && bookmark.restaurant.rating < 4.5) %>
                     <% 4.times do %>
-                    <i class="fas fa-star" style="color:white"></i>
+                    <i class="fas fa-star" style="color:rgba(255, 100, 149, 1)"></i>
                     <% end %>
                   <% else %>
                     <% 5.times do %>
-                    <i class="fas fa-star" style="color:white"></i>
+                    <i class="fas fa-star" style="color:rgba(255, 100, 149, 1)"></i>
                     <% end %>
                   <% end %>
                 </div>
@@ -87,4 +89,5 @@
       </div>
     <% end %>
   </div>
+</div>
 </div>

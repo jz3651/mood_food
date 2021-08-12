@@ -1,15 +1,14 @@
 <div class="restaurant-index">
   <div class="restaurants-container">
 
-
-
+    <% if params[:query].present?%>
+      <h2><%=params[:query][1].capitalize%> Restaurants</h2>
+    <% else %>
+      <h2>All Restaurants</h2>
+    <% end%>
 
     <div id="js-list">
-      <% if params[:query].present?%>
-        <h2><%=params[:query].capitalize%> Restaurants</h2>
-      <% else %>
-        <h2>All Restaurants</h2>
-      <% end%>
+
       <div class="restaurants">
         <div class="restaurant-wrapper">
               <% cache @restaurants do %>
