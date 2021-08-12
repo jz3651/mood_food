@@ -9,23 +9,23 @@
   <div class="navbar-search-container">
     <%= form_tag restaurants_path, method: :get, :class => "navbar-search" do %>
         <div class="nav-form-tag">
-            <%= text_field_tag :query,
-                params[:query],
+            <%= text_field_tag :location,
+                params[:location],
                 class: "form-control",
                 placeholder: "Location",
-                name: "query[]"
+                name: "location"
             %>
         </div>
         <div class="nav-form-tag">
-            <%= text_field_tag :query,
-                params[:query],
+            <%= text_field_tag :cuisine,
+                params[:cuisine],
                 class: "form-control",
                 placeholder: "Cuisine",
-                name: "query[]"
+                name: "cuisine"
             %>
         </div>
         <div class="custom-class nav-form-tag">
-            <select id="mood-dropdown" name="query[]" class="mood-dropdown-list">
+            <select id="mood-dropdown" name="mood" class="mood-dropdown-list">
                 <option value="" data-placeholder>Your Mood</option>
                 <option value="romantic">Romantic</option>
                 <option value="casual">Casual</option>
