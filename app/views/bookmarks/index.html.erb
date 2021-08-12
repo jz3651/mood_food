@@ -7,7 +7,7 @@
       <div class="bookmark-card-content">
           <div class="card-front" style="background-image: url(
           <% if bookmark.restaurant.cuisine == "Mexican" %>
-            <%= "https://source.unsplash.com/Y0zbn9lPCEU" %>
+            <%= "https://source.unsplash.com/lP5MCM6nZ5A" %>
           <%elsif bookmark.restaurant.cuisine == "Italian" %>
             <%="https://source.unsplash.com/MqT0asuoIcU" %>
           <%else %>
@@ -17,22 +17,22 @@
               <h4><%=  bookmark.restaurant.name %></h4>
                 <div class="bookmark-rating">
                   <% if bookmark.restaurant.rating < 2 %>
-                    <i class="fas fa-star" style="color:rgba(255, 100, 149, 1)"></i>
+                    <i class="fas fa-star" style="color:rgb(240, 240, 240)"></i>
                   <% elsif (bookmark.restaurant.rating >= 2 && bookmark.restaurant.rating < 3) %>
                     <% 2.times do %>
-                    <i class="fas fa-star" style="color:rgba(255, 100, 149, 1)"></i>
+                    <i class="fas fa-star" style="color:rgb(240, 240, 240)"></i>
                     <% end %>
                   <% elsif (bookmark.restaurant.rating >= 3 && bookmark.restaurant.rating < 4) %>
                     <% 3.times do %>
-                    <i class="fas fa-star" style="color:rgba(255, 100, 149, 1)"></i>
+                    <i class="fas fa-star" style="color:rgb(240, 240, 240)"></i>
                     <% end %>
                   <% elsif (bookmark.restaurant.rating >= 4 && bookmark.restaurant.rating < 4.5) %>
                     <% 4.times do %>
-                    <i class="fas fa-star" style="color:rgba(255, 100, 149, 1)"></i>
+                    <i class="fas fa-star" style="color:rgb(240, 240, 240)"></i>
                     <% end %>
                   <% else %>
                     <% 5.times do %>
-                    <i class="fas fa-star" style="color:rgba(255, 100, 149, 1)"></i>
+                    <i class="fas fa-star" style="color:rgb(240, 240, 240)"></i>
                     <% end %>
                   <% end %>
                 </div>

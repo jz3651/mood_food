@@ -90,17 +90,19 @@ $accent-color: #361999;
   h4 {
     grid-row: 2;
     margin-bottom: 0.3em;
-    color: rgba(255, 100, 149, 1);
+    color: white;
+    -webkit-text-stroke: 1px rgba(255, 100, 149, 1);
     font-weight: 700;
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     padding: 10px;
-    background-color: #35189880
+    // background-color: #35189880;
+    // border: solid 2px #35189895;
   }
 
   .bookmark-rating {
     grid-row: 3;
-    color: rgba(255, 100, 149, 1);
+   -webkit-text-stroke: 1px rgba(255, 100, 149, 1);
     font-size: 14px;
     display: flex;
     flex-flow: row nowrap;
@@ -209,8 +211,8 @@ $accent-color: #361999;
   line-height: 2.9em;
   min-width: 3em;
   background-color: #35189880;
-  border: solid 2px #35189895;
-  color: rgba(255, 100, 149, 1);
+  border: solid 2px rgb(240, 240, 240);
+  color: rgb(240, 240, 240);
   border-radius: 4px;
   text-align: center;
   left: 50%;
