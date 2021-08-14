@@ -2,7 +2,7 @@
     <div id="restaurant-<%= restaurant.id %>" class="restaurant-card">
         <%= link_to restaurant_path(restaurant), target: :_blank do %>
             <div class="image-segment">
-                <img class="restaurant-image" src="https://source.unsplash.com/mE6kjov4rTg" alt="">
+                <img class="restaurant-image" src= <%=restaurant.picture%> alt="">
                 <% end %>
                 <div>
                     <div class= "restaurant-icons">
