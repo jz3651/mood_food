@@ -32,7 +32,7 @@ class RestaurantsController < ApplicationController
     @restaurant_image = ""
 
     if @restaurant.cuisine == "Mexican"
-      @restaurant_image << "https://source.unsplash.com/Y0zbn9lPCEU"
+      @restaurant_image << "https://source.unsplash.com/lP5MCM6nZ5A"
     elsif @restaurant.cuisine == "Italian"
       @restaurant_image << "https://source.unsplash.com/MqT0asuoIcU"
     else
