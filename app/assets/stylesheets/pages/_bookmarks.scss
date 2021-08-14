@@ -91,7 +91,7 @@ $accent-color: #361999;
     grid-row: 2;
     margin-bottom: 0.3em;
     color: white;
-    -webkit-text-stroke: 1px rgba(255, 100, 149, 1);
+    -webkit-text-stroke: 1px #35189880;
     font-weight: 700;
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -102,7 +102,7 @@ $accent-color: #361999;
 
   .bookmark-rating {
     grid-row: 3;
-   -webkit-text-stroke: 1px rgba(255, 100, 149, 1);
+   -webkit-text-stroke: 1px #35189880;
     font-size: 14px;
     display: flex;
     flex-flow: row nowrap;

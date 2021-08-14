@@ -12,52 +12,56 @@ Restaurant.create([
     location: '128 Hopkins St, Footscray',
     cuisine: 'Vietnamese',
     price: 50,
-    description: 'Intimate Vietnamese restaurant',
+    description: 'An intimate eatery popular amongst locals for their piping hot bowls of pho',
     rating: 4.4,
     mood_rating: 88,
     mood_name: "Romantic",
     date_rating: 5,
     social_rating: 3,
-    rush_rating: 2
+    rush_rating: 2,
+    picture: "https://source.unsplash.com/Jb8A-y2dVOE"
   },
   {
     name: 'Sapa Hills',
     location: '112 Hopkins St, Footscray',
     cuisine: 'Vietnamese',
     price: 100,
-    description: 'Perfect for date night',
+    description: 'Perfect for date night, Asian food with a modern twist on the menu',
     rating: 4.2,
     mood_rating: 96,
     mood_name: "Romantic",
     date_rating: 5,
     social_rating: 3,
-    rush_rating: 5
+    rush_rating: 5,
+    picture: "https://source.unsplash.com/5goCmtLcimI"
   },
   {
     name: 'Hao Phong',
     location: '136 Hopkins St, Footscray',
     cuisine: 'Vietnamese',
     price: 120,
-    description: 'Delicious Vietnamese Restaurant',
+    description: 'An extensive menu covering all basis of Vietnamese cuisine blended with staple Chinese dishes thats just a stones throw away from Footscray Market',
     rating: 4.2,
     mood_rating: 84,
     mood_name: "Romantic",
     date_rating: 5,
     social_rating: 3,
-    rush_rating: 2
+    rush_rating: 2,
+    picture: "https://source.unsplash.com/Jh9gjF8Bjzk"
   },
   {
     name: 'Huong Viet Vegetarian & Vegan',
     location: '36A Leeds St, Footscray',
     cuisine: 'Vietnamese',
     price: 80,
-    description: 'Delicious Vietnamese Restaurant',
+    description: 'Traditional Vietnamese dishes with a difference, the entire menu is vegetarian or vegan',
     rating: 4.6,
     mood_rating: 88,
     mood_name: "Casual",
     date_rating: 5,
     social_rating: 3,
-    rush_rating: 2
+    rush_rating: 2,
+    picture: "https://source.unsplash.com/YkyDvP4OY6M"
   },
   {
     name: 'Pho Tam',
@@ -70,31 +74,34 @@ Restaurant.create([
     mood_name: "Romantic",
     date_rating: 5,
     social_rating: 3,
-    rush_rating: 2
+    rush_rating: 2,
+    picture: "https://source.unsplash.com/uP0ngYARhlU"
   },
   {
     name: 'Tipo 00',
     location: '361 Little Bourke St, Melbourne',
     cuisine: 'Italian',
     price: 50,
-    description: 'Delicious Italian Restaurant',
+    description: 'Cosy little fitout propped along Little Bourke Street, hand making pasta and serving authentic Italian since 2014',
     rating: 4.5,
     mood_rating: 60,
     date_rating: 4,
     social_rating: 4,
-    rush_rating: 3
+    rush_rating: 3,
+    picture: "https://source.unsplash.com/O7ZMSQz6ink"
   },
   {
     name: '+39 Pizzeria',
     location: '362 Little Bourke St, Melbourne',
     cuisine: 'Italian',
     price: 100,
-    description: 'Delicious Italian Restaurant',
+    description: 'Honouring the traditional art of pizza making aligned with modern insights, complemented with authentic pasta and antipasto',
     rating: 4.4,
     mood_rating: 50,
     date_rating: 2,
     social_rating: 2,
-    rush_rating: 5
+    rush_rating: 5,
+    picture: "https://source.unsplash.com/9p6pFEwq-wI"
   },
   {
     name: 'DOC Pizza & Mozzarella Bar',
@@ -104,103 +111,108 @@ Restaurant.create([
     description: 'Delicious Italian Restaurant',
     rating: 4.4,
     mood_rating: 40,
-
     mood_name: "Casual",
     date_rating: 4,
     social_rating: 4,
-    rush_rating: 4
+    rush_rating: 4,
+    picture: "https://source.unsplash.com/v4LQkXJPK0o"
   },
   {
     name: 'Maccaroni Trattoria Italiana',
     location: '10-16 Manchester Ln, Melbourne',
     cuisine: "Italian",
     price: 80,
-    description: 'Delicious Italian Restaurant',
+    description: 'Italian fare in the heart of the CBD',
     rating: 4.3,
     mood_rating: 20,
     # mood_name: "Romantic",
     date_rating: 5,
     social_rating: 5,
-    rush_rating: 1
+    rush_rating: 1,
+    picture: "https://source.unsplash.com/q03ZLncun2Y"
   },
   {
     name: 'Osteria Ilaria',
     location: '367 Little Bourke St, Melbourne',
     cuisine: 'Italian',
     price: 100,
-    description: 'Delicious Italian Restaurant',
+    description: 'An intimate wine bar & eatery from the team behind Tip 00, remixing their elder siblings signature Italian roots with a fun Mediterranean flair',
     rating: 4.3,
     mood_rating: 10,
     # mood_name: "Romantic",
     date_rating: 5,
     social_rating: 3,
-    rush_rating: 2
+    rush_rating: 2,
+    picture: "https://source.unsplash.com/2Y4bYo1Mn-0"
   },
   {
     name: 'Trippy Taco',
     location: '234 Gertrude St, Fitzroy',
     cuisine: 'Mexican',
     price: 50,
-    description: 'Delicious Mexican Restaurant',
+    description: 'Mexican style vegetarian street food',
     rating: 4.3,
     mood_rating: 10,
     date_rating: 3,
     social_rating: 5,
-    rush_rating: 0
+    rush_rating: 0,
+    picture: "https://source.unsplash.com/JANnAEcRLio"
   },
   {
     name: 'La Tortilleria',
     location: '72 Stubbs St, Kensington',
     cuisine: 'Mexican',
     price: 100,
-    description: 'Delicious Mexican Restaurant',
+    description: 'Serving up Mexican cuisine in a warm and friendly atmosphere, with authentic house made tortillas',
     rating: 4.3,
     mood_rating: 20,
     # mood_name: "Casual",
     date_rating: 5,
     social_rating: 3,
-    rush_rating: 2
+    rush_rating: 2,
+    picture: "https://source.unsplash.com/W3SEyZODn8U"
   },
   {
     name: 'Mamasita',
     location: 'Level 1/11 Collins St, Melbourne',
     cuisine: 'Mexican',
     price: 120,
-    description: 'Delicious Mexican Restaurant',
+    description: 'Melbournes first proper taqueria serving up a wide selection of tacos and tequila in a trendy space',
     rating: 4.3,
     mood_rating: 15,
-
     mood_name: "Casual",
     date_rating: 4,
     social_rating: 4,
-    rush_rating: 5
+    rush_rating: 5,
+    picture: "https://source.unsplash.com/OkhcMbf3vQ0"
   },
   {
     name: 'Radio Mexico',
     location: '11-13 Carlisle St, St Kilda',
     cuisine: 'Mexican',
     price: 80,
-    description: 'Delicious Mexican Restaurant',
+    description: 'Iconic St Kilda restaurant offering authentic Mexican flavours with a Melbourne twist, vibrant atmosphere and margaritas',
     rating: 4.3,
     mood_rating: 12,
-
     mood_name: "Casual",
     date_rating: 4,
     social_rating: 5,
-    rush_rating: 2
+    rush_rating: 2,
+    picture: "https://source.unsplash.com/RKw6ffnbYEs"
   },
   {
     name: 'Fonda',
     location: '236 Smith St, Collingwood',
     cuisine: 'Mexican',
     price: 100,
-    description: 'Delicious Mexican Restaurant',
+    description: 'Mexican cuisine with a cool modern twist',
     rating: 4.3,
     mood_rating: 20,
     # mood_name: "Romantic",
     date_rating: 5,
     social_rating: 3,
-    rush_rating: 1
+    rush_rating: 1,
+    picture: "https://source.unsplash.com/OkhcMbf3vQ0"
   }
 ])
 
