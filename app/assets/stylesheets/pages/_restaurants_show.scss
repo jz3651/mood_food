@@ -50,7 +50,6 @@
 
 .reviews-container{
   position: relative;
-  width: 90%;
   margin: 1rem;
   max-width: 80rem;
 }
@@ -63,7 +62,7 @@
 }
 
 .mood-match{
-    width: calc(33.33% - 1.5rem);
+    width: 260px;
     display: flex;
     flex-direction: row;
     margin: 0px 0.75rem 1.5rem;
@@ -153,6 +152,10 @@
   color: rgb(28, 28, 28);
   display: flex;
   justify-content: center;
+  margin-top: 30px;
+  h3 {
+    font-weight: bold;
+  }
 }
 
 .review {
