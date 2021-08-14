@@ -47,7 +47,7 @@ Restaurant.create([
     date_rating: 5,
     social_rating: 3,
     rush_rating: 2,
-    picture: "https://source.unsplash.com/Jh9gjF8Bjzk"
+    picture: "https://source.unsplash.com/0BhsN70JVA8"
   },
   {
     name: 'Huong Viet Vegetarian & Vegan',
@@ -75,7 +75,7 @@ Restaurant.create([
     date_rating: 5,
     social_rating: 3,
     rush_rating: 2,
-    picture: "https://source.unsplash.com/uP0ngYARhlU"
+    picture: "https://source.unsplash.com/L1ZhjK-R6uc"
   },
   {
     name: 'Tipo 00',
