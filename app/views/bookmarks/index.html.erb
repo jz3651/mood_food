@@ -50,6 +50,14 @@
                   <span>Date</span>
                 </div>
               </div>
+               <script src="https://unpkg.com/@popperjs/core@2"></script>
+                            <script src="https://unpkg.com/tippy.js@6"></script>
+                            <script>
+
+                            tippy('.card-info', {
+                            content: 'Review mentions',
+                            });
+                            </script>
               <div class="card-info">
                 <span><%=  bookmark.restaurant.social_rating %></span>
                 <div class="card-icon">
@@ -66,7 +74,7 @@
               </div>
               <div class="card-description">
                 <p> <%= bookmark.restaurant.description %> </p>
-                <p><%= link_to "Go To Restaurant", restaurant_path(bookmark.restaurant) %></p>
+                <p class = "restaurant-link"><%= link_to "Go To Restaurant", restaurant_path(bookmark.restaurant) %></p>
               </div>
 
               <div class="card-location"><%= bookmark.restaurant.location %></div>
