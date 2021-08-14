@@ -78,7 +78,7 @@
       border: none;
       padding: 0px;
       width: 100px;
-      font-size: 15px;
+      font-size: 14px;
   }
   .form-control:focus {
       border: none;
@@ -88,10 +88,18 @@
   }
 }
 
-.edd-head {
+.nav-form-tag .edd-head {
   position: relative;
   overflow: hidden;
   transition: box-shadow 200ms;
   background: white;
   font-size: 14px;
+}
+
+.nav-form-tag .edd-body {
+  font-size: 14px;
+}
+
+.avatar {
+  cursor: pointer;
 }

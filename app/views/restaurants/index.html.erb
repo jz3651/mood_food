@@ -1,29 +1,30 @@
 <div class="restaurant-index">
   <div class="restaurants-container">
-
-
-
-
     <div id="js-list">
-      <% if params[:query].present?%>
-        <h2><%=params[:query][1].capitalize%> Restaurants</h2>
-      <% else %>
-        <h2>All Restaurants</h2>
-      <% end%>
       <div class="restaurants">
-        <div class="restaurant-wrapper">
-              <% cache @restaurants do %>
-                  <%= render @restaurants %>
-              <% end %>
+        <div class="col-6">
+          <div class="index-title">
+            <% if params[:query].present?%>
+              <h2><%=params[:query][1].capitalize%> Restaurants</h2>
+            <% else %>
+              <h2>All Restaurants</h2>
+            <% end%>
+          </div>
+          <div class="restaurant-wrapper">
+            <% cache @restaurants do %>
+                <%= render @restaurants %>
+            <% end %>
+          </div>
         </div>
-      </div>
-    </div>
-
-    <div id="js-map" class="d-none">
-      <div id="map"
-        style="width: 100%; height: 500px;"
-        data-markers="<%= @markers.to_json %>"
-        data-mapbox-api-key="pk.eyJ1Ijoibmlja3N5cGFudHMiLCJhIjoiY2tyaDdnMm51NXMzdzJvcXVweHNqcGY5cyJ9.20i0aGnIAdLyDqquICxekQ">
+        <div class="col-6">
+          <div id="js-map map" class="bg-primary" style="position: sticky; top: 0;">
+            <div id="map"
+              style="width: 100%; height: 100vh;"
+              data-markers="<%= @markers.to_json %>"
+              data-mapbox-api-key="pk.eyJ1Ijoibmlja3N5cGFudHMiLCJhIjoiY2tyaDdnMm51NXMzdzJvcXVweHNqcGY5cyJ9.20i0aGnIAdLyDqquICxekQ">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

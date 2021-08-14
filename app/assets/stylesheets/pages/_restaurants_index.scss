@@ -10,16 +10,20 @@
 
 .restaurant-card {
     height: 400px;
-    margin: 30px 10px;
-    max-width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-bottom: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    max-width: 700px;
+    border-bottom: 1px solid lightgray;
+}
+
+.restaurant-card:first-child {
+    border-top: 1px solid lightgray;
 }
 
 .image-segment {
     display: inline-block;
     position: relative;
+    width: 100%;
 }
 
 .image-segment img {
@@ -40,11 +44,22 @@
     border: none;
     background: none;
     color: inherit;
+    // &:hover {
+    //     background: lightgray;
+    //     opacity: 70%;
+    //     width: 50px;
+    //     height: 50px;
+    //     border-radius: 50%;
+    //     position: absolute;
+    //     top: 70%;
+    //     right: 80%;
+    //     color: inherit;
+    // }
 }
 
 .fa-heart {
     color: #FF6495;
-    transition: 0.3s;
+    // transition: 0.3s;
 }
 
 .mood-rating-text {
@@ -96,12 +111,8 @@ p {
 
 .restaurants {
     display: flex;
-    justify-content: center;
-
-
     .restaurant-wrapper {
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
+        // grid-template-columns: repeat(3,1fr);
         justify-content: center;
     }
 }
@@ -132,5 +143,12 @@ p {
     .list-map-buttons {
         margin-left: 5px;
         padding-top: 1px;
+    }
+}
+
+.index-title {
+    margin-bottom: 20px;
+    h2 {
+        font-weight: bold;
     }
 }

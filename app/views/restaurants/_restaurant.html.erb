@@ -1,6 +1,6 @@
 <% cache restaurant do %>
     <div id="restaurant-<%= restaurant.id %>" class="restaurant-card">
-        <%= link_to restaurant_path(restaurant), target: :_blank do %>
+        <%= link_to restaurant_path(restaurant) do %>
             <div class="image-segment">
                 <img class="restaurant-image" src="https://source.unsplash.com/mE6kjov4rTg" alt="">
                 <% end %>
@@ -12,10 +12,9 @@
                             <script src="https://unpkg.com/@popperjs/core@2"></script>
                             <script src="https://unpkg.com/tippy.js@6"></script>
                             <script>
-
-                            tippy('#MoodMatch', {
-                            content: 'Your personalised match',
-                            });
+                                tippy('#MoodMatch', {
+                                content: 'Your personalised match',
+                                });
                             </script>
                                 <p><%=restaurant.mood_rating%>%</p>
                             </div>
@@ -36,7 +35,7 @@
                 </div>
             </div>
         <p style="color:#b9b9b9; font-size:15px"><i class="fas fa-utensils"></i> <%= restaurant.cuisine %>  <i class="fas fa-map-marker-alt"></i> <%= restaurant.location %></p>
-        <%= link_to restaurant_path(restaurant), target: :_blank, :class => "restaurant-link" do %>
+        <%= link_to restaurant_path(restaurant), :class => "restaurant-link" do %>
             <p class="restaurant-name"><%= restaurant.name%></p>
         <% end %>
         <p class="mt-2"><%= restaurant.description %></p>
