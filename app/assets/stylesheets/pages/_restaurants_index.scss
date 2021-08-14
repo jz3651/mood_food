@@ -147,3 +147,22 @@ p {
   width: 360px;
 }
 
+.ya-muma{
+  display: flex;
+}
+
+.list-map-buttons{
+  margin-left: 400px;
+}
+
+.list-map-buttons button {
+  background-color: #361999;
+  border: 1px solid #FF6495;
+  border-radius: 50px;
+  color: #FF6495;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}

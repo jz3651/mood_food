@@ -1,11 +1,18 @@
 <div class="restaurant-index">
   <div class="restaurants-container">
+    <div class="ya-muma">
+      <% if params[:query].present?%>
+        <h2><%=params[:query][1].capitalize%> Restaurants</h2>
+      <% else %>
+        <h2>Your personalised recommendations, Seamus</h2>
+      <% end%>
 
-    <% if params[:query].present?%>
-      <h2><%=params[:query][1].capitalize%> Restaurants</h2>
-    <% else %>
-      <h2>Your personalised recommendations, Seamus</h2>
-    <% end%>
+      <div class = "list-map-buttons">
+        <button type="button" id= "list-btn">List</button>
+        <button type="button" id= "map-btn">Map</button>
+      </div>
+    </div>
+  </div>
 
     <div id="js-list">
 
@@ -25,5 +32,7 @@
         data-mapbox-api-key="pk.eyJ1Ijoibmlja3N5cGFudHMiLCJhIjoiY2tyaDdnMm51NXMzdzJvcXVweHNqcGY5cyJ9.20i0aGnIAdLyDqquICxekQ">
       </div>
     </div>
+
   </div>
+
 </div>
