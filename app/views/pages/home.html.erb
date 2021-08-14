@@ -10,25 +10,25 @@
             <%= form_tag restaurants_path, method: :get, :class => "restaurant-search" do %>
                 <div class="form-tag">
                     <%= label_tag(:q, "Location", class: "search-label") %>
-                    <%= text_field_tag :query,
-                        params[:query],
+                    <%= text_field_tag :location,
+                        params[:location],
                         class: "form-control",
                         placeholder: "Where to eat?",
-                        name: "query[]"
+                        name: "location"
                     %>
                 </div>
                 <div class="form-tag">
                     <%= label_tag(:q, "Cuisine", class: "search-label")%>
-                    <%= text_field_tag :query,
-                        params[:query],
+                    <%= text_field_tag :cuisine,
+                        params[:cuisine],
                         class: "form-control",
                         placeholder: "What do you feel like?",
-                        name: "query[]"
+                        name: "cuisine"
                     %>
                 </div>
                 <div class="custom-class form-tag">
                     <%= label_tag(:q, "Mood:", class: "mood-text") %>
-                    <select id="mood-dropdown" name="query[]" class="mood-dropdown-list">
+                    <select id="mood-dropdown" name="mood" class="mood-dropdown-list">
                         <option value="" data-placeholder>Your Mood</option>
                         <option value="romantic">Romantic</option>
                         <option value="casual">Casual</option>
@@ -41,7 +41,7 @@
                     <i class="fas fa-search"></i>
                 <% end %>
             <% end %>
-            <h3 class="BS text-center">Personalised recs without the BS.</h3>
+            <h3 class="BS text-center">Personalised recommendations without the BS.</h3>
         </div>
     </div>
 </div>

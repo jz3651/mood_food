@@ -4,10 +4,11 @@
     <% if params[:query].present?%>
       <h2><%=params[:query][1].capitalize%> Restaurants</h2>
     <% else %>
-      <h2>All Restaurants</h2>
+      <h2>Your personalised recommendations, Seamus</h2>
     <% end%>
 
     <div id="js-list">
+
       <div class="restaurants">
         <div class="restaurant-wrapper">
               <% cache @restaurants do %>

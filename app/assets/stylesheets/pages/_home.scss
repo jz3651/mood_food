@@ -111,7 +111,8 @@ a:hover {
 }
 
 .search-container {
-    margin-bottom: 215px;
+    margin-top: 150px;
+    margin-bottom: 150px;
 }
 
 .title-description {
@@ -241,4 +242,9 @@ a:hover {
 .mood-dropdown-list:focus-visible {
     outline: none;
     box-shadow: none;
+}
+
+.form-tag .edd-value {
+    font-size: 15px;
+    padding-left: 0px;
 }

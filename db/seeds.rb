@@ -12,7 +12,7 @@ Restaurant.create([
     location: '128 Hopkins St, Footscray',
     cuisine: 'Vietnamese',
     price: 50,
-    description: 'A busy, casual eatery popular amongst locals for their piping hot bowls of pho',
+    description: 'An intimate eatery popular amongst locals for their piping hot bowls of pho',
     rating: 4.4,
     mood_rating: 88,
     mood_name: "Romantic",
@@ -26,7 +26,7 @@ Restaurant.create([
     location: '112 Hopkins St, Footscray',
     cuisine: 'Vietnamese',
     price: 100,
-    description: 'Asian food with a modern twist on the menu',
+    description: 'Perfect for date night, Asian food with a modern twist on the menu',
     rating: 4.2,
     mood_rating: 96,
     mood_name: "Romantic",
@@ -43,7 +43,7 @@ Restaurant.create([
     description: 'An extensive menu covering all basis of Vietnamese cuisine blended with staple Chinese dishes thats just a stones throw away from Footscray Market',
     rating: 4.2,
     mood_rating: 84,
-    mood_name: "Casual",
+    mood_name: "Romantic",
     date_rating: 5,
     social_rating: 3,
     rush_rating: 2,
@@ -68,10 +68,10 @@ Restaurant.create([
     location: '7/9 Leeds St, Footscray',
     cuisine: 'Vietnamese',
     price: 100,
-    description: 'A popular west side food destination',
+    description: 'Phoking great',
     rating: 4.5,
     mood_rating: 75,
-    mood_name: "Casual",
+    mood_name: "Romantic",
     date_rating: 5,
     social_rating: 3,
     rush_rating: 2,
@@ -223,16 +223,16 @@ Review.create([
     rating: 5,
     source: "Google",
     reviewdate: "10/08/2021",
-    description: "If you look arround Footscray, only this restaurant(sapa hill) have a various vietnamese delicious foods, we have been here many time and every time we call different dishes, and so suprise is all are absolutely delicious, 1, fast service2, the restaurant is clean, toilet is clean （show us about the hygiene)3, lovely and good service staff4, the food price is ok within arround Footscray5, lot of special dishes which another restsurant not supply or not delicious(eg. bun cha hanoi,bun moc thit,....)that is all the points to make me give them 5 star."
+    description: "If you look around Footscray, only this restauranthas a variety of Vietnamese foods. We have been here many times and every time we order different dishes. This restaurant has 1: fast service 2: the restaurant is clean 3: lovely and good service staff 4: reasonable food prices for Footscray 5: a lot of special dishes which other restaurants don't have (eg. bun cha hanoi, bun moc thit"
     },
 
     {
     restaurant_id: 2,
-    title: "My go to Vietnamese Joint",
+    title: "Intimate",
     rating: 4,
     source: "Zomato",
     reviewdate: "05/08/2021",
-    description: "Sapa Hills used to be my go to Vietnamese restaurant in Footscray. The food was amazing and it was very reasonably priced. However, I hate to say that they no longer focus on flavour and quality of the food. Their main focus is making the restaurant as aesthetic as possible. Don't get me wrong, the decor and ambience of the restaurant is nice, but with this they have increased prices and decreased taste and quality."
+    description: "Sapa Hills is my go to Vietnamese restaurant in Footscray. The food is amazing and it's very reasonably priced. Love coming here on date night."
     },
 
     {

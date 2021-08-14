@@ -9,23 +9,23 @@
   <div class="navbar-search-container">
     <%= form_tag restaurants_path, method: :get, :class => "navbar-search" do %>
         <div class="nav-form-tag">
-            <%= text_field_tag :query,
-                params[:query],
+            <%= text_field_tag :location,
+                params[:location],
                 class: "form-control",
                 placeholder: "Location",
-                name: "query[]"
+                name: "location"
             %>
         </div>
         <div class="nav-form-tag">
-            <%= text_field_tag :query,
-                params[:query],
+            <%= text_field_tag :cuisine,
+                params[:cuisine],
                 class: "form-control",
                 placeholder: "Cuisine",
-                name: "query[]"
+                name: "cuisine"
             %>
         </div>
         <div class="custom-class nav-form-tag">
-            <select id="mood-dropdown" name="query[]" class="mood-dropdown-list">
+            <select id="mood-dropdown" name="mood" class="mood-dropdown-list">
                 <option value="" data-placeholder>Your Mood</option>
                 <option value="romantic">Romantic</option>
                 <option value="casual">Casual</option>
@@ -53,7 +53,7 @@
           <%= link_to "Saved", bookmarks_path, class: "nav-link" %>
         </li>
         <li class="nav-item dropdown">
-          <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+          <%= image_tag "https://res.cloudinary.com/shamo/image/upload/v1628891048/Seamus_ow3c9j.png", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
             <%= link_to "Log out", destroy_user_session_path, :method => :delete, class: "dropdown-item" %>
           </div>
